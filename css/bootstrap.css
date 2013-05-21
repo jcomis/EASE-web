@@ -6054,7 +6054,8 @@ a.badge:focus {
 .current-data-title {
   text-align: center;
   font-size: 17.5px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  margin-top: -10px;
 }
 .now-data {
   text-align: center;
@@ -6085,6 +6086,30 @@ a.badge:focus {
 .graph {
   background-color: rgba(0, 0, 0, 0.2);
   height: 250px;
+}
+.recent-event {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.recent-event i {
+  padding-right: 10px;
+}
+.recent-event h4 {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.15);
+  -webkit-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 1px rgba(255, 255, 255, 0.9);
+}
+.recent-event .close {
+  right: 0;
 }
 .pull-right {
   float: right;

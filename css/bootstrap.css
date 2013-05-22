@@ -6052,6 +6052,31 @@ a.badge:focus {
 .current-data {
   padding-bottom: 60px;
 }
+.air-qual-box {
+  padding: 5px 5px 5px 20px;
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+}
+.air-qual-value {
+  font-size: 30px;
+  margin-left: 22px;
+}
+.air-qual-gradient {
+  width: 80%;
+  height: 25px;
+  border-radius: 2px;
+  float: right;
+  margin-right: 15px;
+  background-color: #D82F2F;
+  background: -webkit-gradient(linear, left center, right center, from(#37b726), to(#d82f2f), color-stop(0.5, #eae844));
+  background: -moz-linear-gradient(left, #37b726 0%, #eae844 50%, #d82f2f 100%);
+}
+.air-qual-gradient i {
+  position: relative;
+  left: 40%;
+  top: -30px;
+}
 .current-data-title {
   text-align: center;
   font-size: 17.5px;

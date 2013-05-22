@@ -71,9 +71,10 @@
 }
 
 .graph-controls {
-
+    border: 1px solid rgba(0,0,0,.15);
     float: right;
-    padding: 18px 15px 0 15px;
+    padding: 10px;
+    width:70%;
     margin-right:0;
 }
 
@@ -86,10 +87,29 @@
 
 .graph-details {
     position: relative;
-    height: 500px;
-    background-color:Gray;
+    height: 350px;
+    background-color:#fff;
     overflow: auto;
     overflow-y: scroll;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    .box-shadow(~"inset 0 2px 4px rgba(0,0,0,.3), inset 0 -2px 4px rgba(0,0,0,.3)");
   //  max-width:230px;
   //  max-height:100px;
 }
+
+.graph-details .summary-data {
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-bottom: none;
+    .summary-data-date {
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
+
+

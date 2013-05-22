@@ -6036,6 +6036,7 @@ a.badge:focus {
   line-height: 30px;
 }
 /** Custom styles go here! **/
+/* DASH page */
 .dash {
   -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
@@ -6059,7 +6060,7 @@ a.badge:focus {
 .now-data {
   text-align: center;
   position: relative;
-  width: 24%;
+  width: 24.7%;
   float: left;
   font-size: 17.5px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -6086,6 +6087,7 @@ a.badge:focus {
   background-color: rgba(0, 0, 0, 0.2);
   height: 250px;
 }
+/* EXPLORE page */
 .recent-event {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -6148,6 +6150,31 @@ a.badge:focus {
 }
 .middle {
   vertical-align: middle;
+}
+.explore-header h2 {
+  float: left;
+}
+.explore-header span {
+  font-size: 16px;
+  margin-right: 15px;
+}
+.graph-controls {
+  float: right;
+  padding: 18px 15px 0 15px;
+  margin-right: 0;
+}
+.explore-graph {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  height: 400px;
+  clear: both;
+}
+.graph-details {
+  position: relative;
+  height: 500px;
+  background-color: Gray;
+  overflow: auto;
+  overflow-y: scroll;
 }
 .pull-right {
   float: right;

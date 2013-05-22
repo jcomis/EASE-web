@@ -1,0 +1,700 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font"
+			],
+			[
+				"tex",
+				"text-indent"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"borde",
+				"border-left"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"an",
+				"answer"
+			],
+			[
+				"PH",
+				"PHRASE_FIRST"
+			],
+			[
+				"sni",
+				"snippets"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"class",
+				"class_names"
+			],
+			[
+				"ph",
+				"phrase"
+			],
+			[
+				"para",
+				"param_names"
+			],
+			[
+				"c",
+				"count"
+			],
+			[
+				"word",
+				"WORDS"
+			],
+			[
+				"W",
+				"WORDS"
+			],
+			[
+				"WOR",
+				"WORD_URL"
+			],
+			[
+				"happy",
+				"happy_bday"
+			],
+			[
+				"ab",
+				"abbreviation"
+			],
+			[
+				"abb",
+				"abbrev"
+			],
+			[
+				"ci",
+				"cities"
+			],
+			[
+				"st",
+				"state"
+			],
+			[
+				"s",
+				"stuff"
+			],
+			[
+				"try",
+				"try	Try/Except/Finally"
+			],
+			[
+				"be",
+				"bear_room"
+			],
+			[
+				"room",
+				"cthulu_room"
+			],
+			[
+				"r",
+				"raw_input"
+			],
+			[
+				"gold",
+				"gold_room"
+			],
+			[
+				"bear",
+				"bear_moved"
+			],
+			[
+				"b",
+				"bear_moved"
+			],
+			[
+				"h",
+				"how_much"
+			],
+			[
+				"nu",
+				"numbers"
+			],
+			[
+				"pr",
+				"property	New Property"
+			],
+			[
+				"p",
+				"people"
+			],
+			[
+				"bre",
+				"break_words"
+			],
+			[
+				"so",
+				"sort_words"
+			],
+			[
+				"words",
+				"words"
+			],
+			[
+				"i",
+				"iq"
+			],
+			[
+				"a",
+				"age"
+			],
+			[
+				"div",
+				"divide"
+			],
+			[
+				"mult",
+				"multiply"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"cu",
+				"current_line"
+			],
+			[
+				"amount_of_c",
+				"amount_of_crackers"
+			],
+			[
+				"am",
+				"amount_of_cheese"
+			],
+			[
+				"chee",
+				"cheese_and_crackers"
+			],
+			[
+				"che",
+				"cheese_and_crackers"
+			],
+			[
+				"box",
+				"boxes_of_crackers"
+			],
+			[
+				"print",
+				"print_none"
+			],
+			[
+				"prin",
+				"print_two_again"
+			],
+			[
+				"print_",
+				"print_one"
+			],
+			[
+				"arg",
+				"arg1"
+			],
+			[
+				"ar",
+				"arg2"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"ex",
+				"exists"
+			],
+			[
+				"to",
+				"to_file"
+			],
+			[
+				"from",
+				"from_file"
+			],
+			[
+				"line",
+				"line1"
+			],
+			[
+				"n",
+				"Now"
+			],
+			[
+				"t",
+				"target"
+			],
+			[
+				"l",
+				"line1"
+			],
+			[
+				"fil",
+				"filename"
+			],
+			[
+				"txt",
+				"txt_again"
+			],
+			[
+				"tx",
+				"txt_again"
+			],
+			[
+				"file",
+				"file_again"
+			],
+			[
+				"li",
+				"lives"
+			],
+			[
+				"like",
+				"likes"
+			],
+			[
+				"calle",
+				"callled"
+			],
+			[
+				"th",
+				"third"
+			],
+			[
+				"se",
+				"second"
+			],
+			[
+				"w",
+				"weight"
+			],
+			[
+				"ta",
+				"tabby_cat"
+			],
+			[
+				"en",
+				"end2"
+			],
+			[
+				"do",
+				"do_not"
+			],
+			[
+				"my",
+				"my_weight"
+			],
+			[
+				"m",
+				"my_teeth"
+			],
+			[
+				"my_",
+				"my_hair"
+			],
+			[
+				"av",
+				"average_passengers_per_car"
+			],
+			[
+				"car",
+				"cars_driven"
+			],
+			[
+				"background",
+				"background"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 6727,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "alert-yes.html",
+			"settings":
+			{
+				"buffer_size": 2971,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/responsive-768px-979px.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/navbar-backup.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/mixins.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/responsive-navbar.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/utilities.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/variables.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/navs.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/navbar.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/css/bootstrap.css",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/css/style.css",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/index.html",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/css/responsive.css",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/responsive-1200px-min.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/test.html",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/bootstrap.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/dadsite.sublime-project",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/buttons.less",
+		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/type.less",
+		"/Users/jaredcomis/Documents/dadweb",
+		"/Users/jaredcomis/Documents/dadweb/less/custom.less",
+		"/Users/jaredcomis/Documents/dadweb/less/responsive-767px-max.less",
+		"/Users/jaredcomis/bootstrap/less/mixins.less",
+		"/Users/jaredcomis/bootstrap/less/navs.less",
+		"/Users/jaredcomis/bootstrap/index.html",
+		"/Users/jaredcomis/bootstrap/css/bootstrap.css",
+		"/Users/jaredcomis/bootstrap/less/variables.less",
+		"/Users/jaredcomis/bootstrap/less/navbar.less",
+		"/Users/jaredcomis/bootstrap/test.html",
+		"/Users/jaredcomis/learnhardway/ex41.py",
+		"/Users/jaredcomis/learnhardway/ex25.py",
+		"/Users/jaredcomis/learnhardway/test.txt",
+		"/Users/jaredcomis/learnhardway/text.txt",
+		"/Users/jaredcomis/learnhardway/ex15_sample.txt",
+		"/Users/jaredcomis/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jaredcomis/BabySteps/communication/sms/heiditest.php",
+		"/Users/jaredcomis/BabySteps/communication/sms/jaredtest.php",
+		"/Users/jaredcomis/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/jaredcomis/Documents/bootstrap-master/less/custom.less",
+		"/Users/jaredcomis/Documents/bootstrap-master/less/mixins.less",
+		"/Users/jaredcomis/Documents/bootstrap-master/index.html",
+		"/Users/jaredcomis/Documents/bootstrap-master/less/bootstrap.less",
+		"/Users/jaredcomis/Documents/bootstrap-master/less/subtlepatterns.less"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"test.html",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"../assets/",
+			"20px",
+			"fixed-top",
+			"-20",
+			".navbar .co",
+			"-20",
+			"padding-left",
+			"collap",
+			"shad",
+			"</p>",
+			"<p>",
+			"brand",
+			"h5",
+			"btn-",
+			"#fff",
+			"@white",
+			"button",
+			"@white",
+			"btn-n",
+			"nav",
+			"@white",
+			"brand",
+			".bran",
+			"border-left",
+			"btn-n",
+			"brand",
+			".125",
+			"active",
+			"@white",
+			"  ",
+			"active",
+			"div",
+			"navbar-inn",
+			"bar:hover",
+			"hover",
+			"collapse",
+			"btn-n",
+			"colla",
+			"navbar",
+			"html {",
+			"width: ",
+			"width: a",
+			"body",
+			"background",
+			"btn-n",
+			"border-r",
+			"border",
+			"../assets/",
+			".navbar .n",
+			"margin",
+			"border-box",
+			"height",
+			"@media",
+			"media-query",
+			"nav",
+			"contain",
+			"@line-h",
+			"brand",
+			"/js/boot",
+			"/js",
+			"../assets",
+			"/assets",
+			"pass",
+			"getFrom",
+			"contactin",
+			"initial",
+			"../js",
+			"../",
+			"/assets"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"</li>",
+			"<li>",
+			"",
+			"js/boot",
+			"js",
+			"",
+			"js",
+			"ja\n",
+			"\n",
+			";\n",
+			"=\"../",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 6727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "alert-yes.html",
+					"settings":
+					{
+						"buffer_size": 2971,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1107,
+								1107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 157.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true
+}

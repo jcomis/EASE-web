@@ -6088,7 +6088,6 @@ a.badge:focus {
   background-color: rgba(0, 0, 0, 0.2);
   height: 250px;
 }
-/* EXPLORE page */
 .recent-event {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -6113,24 +6112,38 @@ a.badge:focus {
 .recent-event .close {
   right: 0;
 }
+/* EXPLORE page */
 .explore-header h2 {
   float: left;
 }
 .explore-header span {
   font-size: 16px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .graph-controls {
   border: 1px solid rgba(0, 0, 0, 0.15);
   float: right;
   padding: 10px;
-  width: 70%;
   margin-right: 0;
+}
+.graph-selected {
+  margin: 0 5px;
+}
+.selection-details {
+  max-height: 770px;
+}
+.selection-details h3 {
+  text-align: center;
+}
+.selection-details .current-data {
+  margin: inherit 10px 15px 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 .explore-graph {
   background-color: rgba(0, 0, 0, 0.2);
   margin-top: 10px;
-  height: 400px;
+  height: 580px;
   clear: both;
 }
 .graph-details {
@@ -6151,6 +6164,9 @@ a.badge:focus {
 }
 .graph-details .summary-data .summary-data-date {
   margin-right: 10px;
+}
+.graph-details .summary-data:hover {
+  background: rgba(81, 160, 201, 0.3);
 }
 .pull-right {
   float: right;

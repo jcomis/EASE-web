@@ -6193,7 +6193,7 @@ a.badge:focus {
   margin: 0 5px;
 }
 .selection-details {
-  max-height: 770px;
+  max-height: 680px;
 }
 .selection-details h3 {
   text-align: center;
@@ -6211,7 +6211,7 @@ a.badge:focus {
 }
 .graph-details {
   position: relative;
-  height: 350px;
+  height: 200px;
   background-color: #fff;
   overflow: auto;
   overflow-y: scroll;

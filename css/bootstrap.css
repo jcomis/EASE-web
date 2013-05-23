@@ -5264,7 +5264,6 @@ input[type="submit"].btn.btn-mini {
 .modal-body {
   position: relative;
   overflow-y: auto;
-  max-height: 400px;
   padding: 15px;
 }
 .modal-form {
@@ -6138,6 +6137,45 @@ a.badge:focus {
   right: 0;
 }
 /* EXPLORE page */
+.dialog {
+  position: relative;
+  z-index: 1050;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  /* IE6-7 */
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: none;
+}
+#wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#mask {
+  width: 500%;
+  height: 100%;
+}
+.item {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.middle {
+  vertical-align: middle;
+}
 .explore-header h2 {
   float: left;
 }

@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>EASE Air quality sensor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+	<script>
+
+	$(document).ready(function() {
+
+		$('a.panel').click(function () {
+
+			$('a.panel').removeClass('selected');
+			$(this).addClass('selected');
+
+			current = $(this);
+
+			$('#wrapper').scrollTo($(this).attr('href'), 800);		
+
+			return false;
+		});
+
+		$(window).resize(function () {
+			resizePanel();
+		});
+
+	});
+
+	function resizePanel() {
+
+		width = $(window).width();
+		height = $(window).height();
+
+		mask_width = width * $('.item').length;
+
+		$('#debug').html(width  + ' ' + height + ' ' + mask_width);
+
+		$('#wrapper, .item').css({width: width, height: height});
+		$('#mask').css({width: mask_width, height: height});
+		$('#wrapper').scrollTo($('a.selected').attr('href'), 0);
+
+	}
+
+	</script>
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">EASE</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Compare</a></li>
+              <li><a href="#">Improve</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="account.html">Account</a></li>
+              <li><a href="#">Sign Out</a></li>
+            </ul>
+            <!--<form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- END OF NAV -->
+
+    <div class="container">
+      <!-- Example row of columns -->
+    <form class="form-horizontal">
+  
+	<div class="row">
+		<div id="wrapper">
+			<div id="mask">
+
+				<div id="item1" class="item">
+
+					<a name="item1"></a>
+					<div class="span8 offset2">
+						<div class="dialog">
+						  
+							<div class="modal-header">
+						    	<div class="row">
+									<div class="span3">
+										<h3>Device Connection</h3>
+									</div>
+									<div class="span4 middle">
+										<div class="progress progress-success progress-striped">
+									  		<div class="bar" style="width: 25%"></div>
+										</div>
+									</div>
+							    </div>
+							</div>
+						
+							<div class="modal-body">
+								<p>To connect your device to your account, please enter the unique device code located on the bottom of the device. The code is 10 digits.</p>
+								<center><img src="img/device_id.png"></center><br>
+								<div class="control-group">
+							    	<label class="control-label" for="inputDeviceID">Device ID</label>
+							    	<div class="controls">
+							      		<input type="text" id="inputDeviceID" placeholder="Device ID">
+							    	</div>
+							    </div>
+							</div>
+						
+						  <div class="modal-footer">
+						    <!-- <a href="index.html" class="btn btn-large">Nope</a> -->
+						    <a href="#item2" class="btn btn-large btn-info panel">Continue</a>
+						  </div>
+						
+						</div>
+					</div>
+				</div>
+
+				<div id="item2" class="item">
+					<a name="item2"></a>
+					<div class="span8 offset2">
+						<div class="dialog">
+						  <div class="modal-header">
+					    	<div class="row">
+								<div class="span3">
+									<h3>General Information</h3>
+								</div>
+								<div class="span4 middle">
+									<div class="progress progress-success progress-striped">
+								  		<div class="bar" style="width: 50%"></div>
+									</div>
+								</div>
+						    </div>
+						  </div>
+						  <div class="modal-body">
+						    <p>The EASE works best when you provide feedback based on how you are feeling when you are near the device. EASE collects data by checking in with you periodically about your well-being</p><br>
+							<div class="control-group">
+						    	<label class="control-label" for="name">Name</label>
+						    	<div class="controls">
+						            <input id="name" placeholder="Name" type="text" AUTOCOMPLETE=OFF />
+								</div>
+							</div>
+							<div class="control-group">
+						    	<label class="control-label" for="email">Email</label>
+						    	<div class="controls">
+						            <input id="email" name="email" placeholder="name@domain.com" type="text" AUTOCOMPLETE=OFF />
+								</div>
+							</div>
+							<div class="control-group">
+						    	<label class="control-label" for="phone">Phone</label>
+						    	<div class="controls">
+	                                <input id="phone" name="phone" placeholder="XXX-XXX-XXXX" type="tel" AUTOCOMPLETE=OFF />
+								</div>
+							</div>
+							<div class="control-group">
+						    	<label class="control-label" for="twitter">Twitter</label>
+						    	<div class="controls">
+	                                <input id="twitter" name="twitter" type="text" placeholder="@username" AUTOCOMPLETE=OFF />
+								</div>
+							</div>
+							<div class="control-group">
+						    	<label class="control-label" for="zip">Zip</label>
+						    	<div class="controls">
+	                                <input id="zip" name="zip" type="tel" AUTOCOMPLETE=OFF />
+								</div>
+							</div>
+	                   
+						  </div>
+						  <div class="modal-footer">
+						    <a href="#item1" class="btn btn-large panel">Back</a>
+						    <a href="#item3" class="btn btn-large btn-info panel">Continue</a>
+						  </div>
+						</div>
+					  </div>
+				</div>
+
+				<div id="item3" class="item">
+					<a name="item3"></a>
+					<div class="span8 offset2">
+						<div class="dialog">
+						  <div class="modal-header">
+						    	<div class="row">
+									<div class="span3">
+										<h3>Contact preferences</h3>
+									</div>
+									<div class="span4 middle">
+										<div class="progress progress-success progress-striped">
+									  		<div class="bar" style="width: 75%"></div>
+										</div>
+									</div>
+							    </div>
+						  </div>
+						  <div class="modal-body">
+						    <p>The EASE works best when you provide feedback based on how you are feeling when you are near the device. EASE collects data by checking in with you periodically about your well-being</p>
+							
+                            <br><br>I'd like to be prompted to provide feedback
+                            <select id="feedback" name="feedback">
+                                <option selected="selected" disabled="disabled">Select Frequency</option>
+								<option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                            </select>
+							<hr>
+							EASE also provides alerts when your air uality and status changes rapidly.  This is to let you know of the change, but also help you take action through suggestions of how you can remedy the problem.<br><br>
+							<table>
+								<tr><td>I would like to receive alerts</td><td><input type="radio" name="alerts" value="always">Always</td></tr>
+								<tr><td></td><td><input type="radio" name="alerts" value="never">Never</td></tr>
+								<tr><td></td><td><input type="radio" name="alerts" value="type">Only when the following change rapidly:</td></tr>
+								<tr><td></td><td><input type="checkbox" name="change" value="type">Air Quality</td></tr>
+								<tr><td></td><td><input type="checkbox" name="change" value="type">Humidity</td></tr>
+								<tr><td></td><td><input type="checkbox" name="change" value="type">Temperature</td></tr>
+							</table>
+							<hr>																					
+							
+                            I'd like to receive my air quality notifications and alerts through
+                            <select id="alerts" name="alerts">
+								<option selected="selected" disabled="disabled">Select Method</option>
+                                <option>Email</option>
+                                <option>SMS</option>
+                            </select>
+						  </div>
+						  <div class="modal-footer">
+						    <a href="#item2" class="btn btn-large panel">Back</a>
+						    <a href="#item4" class="btn btn-large btn-info panel">Continue</a>
+						  </div>
+						</div>
+					  </div>
+				</div>
+
+				<div id="item4" class="item">
+					<a name="item4"></a>
+					<div class="span8 offset2">
+						<div class="dialog">
+						  <div class="modal-header">
+						    	<div class="row">
+									<div class="span3">
+										<h3>Device Setup</h3>
+									</div>
+									<div class="span4 middle">
+										<div class="progress progress-success progress-striped">
+									  		<div class="bar" style="width: 100%"></div>
+										</div>
+									</div>
+							    </div>
+						  </div>
+						  <div class="modal-body">
+						    <p>Give your device a name that will help you identify it (e.g. Home, Work, Bedroom).  This name will be used when you receive alerts about the air quality around this device.</p>
+							<div class="control-group">
+						    	<label class="control-label" for="device">Device Name</label>
+						    	<div class="controls">
+	                                <input id="device" type="text" placeholder="i.e. Home, Work, Bedroom"AUTOCOMPLETE=OFF />
+								</div>
+							</div>   
+							<hr> 
+                                EASE can provice you with suggestions for improving your air quality when it reaches levels that cause you problems. It needs to konw what actions you are capable of doing near the device.<br><br>
+								<table>
+									<tr>
+										<td>I am able to</td>
+										<td><input type="checkbox" name="able" value="window">Open Window</td>
+										<td><input type="checkbox" name="able" value="filter">Turn on Air Filter</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><input type="checkbox" name="able" value="fan">Turn on Fan</td>
+										<td><input type="checkbox" name="able" value="vacuum">Vacuum</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><input type="checkbox" name="able" value="conditioner">Turn on Air Conditioner</td>
+										<td><input type="checkbox" name="able" value="Dust">Dust</td>
+									</tr>
+								</table>
+								<hr>
+                                Alerts and suggestions from EASE are only effective if you are near the sensor. providing the time periods when you are most frequently around the device helps limit messages to those times.<br><br>
+								<table>
+									<tr>
+										<td>I'm near the device</td>
+										<td><input type="checkbox" name="near" value="morning">Mornings (9am - noon)</td>
+										<td><input type="checkbox" name="near" value="afternoon">Afternoons (noon - 5pm)</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><input type="checkbox" name="near" value="evening">Evenings (5pm - 10pm)</td>
+										<td><input type="checkbox" name="near" value="overnight">Overnight (10pm - 9am)</td>
+									</tr>
+								</table>
+								<br>
+						  </div>
+						  <div class="modal-footer">
+						    <a href="#item3" class="btn btn-large panel">Back</a>
+						    <a href="index.html" class="btn btn-large btn-info">Submit</a>
+						  </div>
+						</div>
+					  </div>
+				</div>
+
+			</div>
+		</div>
+	 </form>
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

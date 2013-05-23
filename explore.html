@@ -38,8 +38,8 @@
           <a class="brand" href="#">EASE</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="#">Explore</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="explore.html">Explore</a></li>
               <li><a href="#">Compare</a></li>
               <li><a href="#">Improve</a></li>
             </ul>
@@ -65,14 +65,14 @@
           <div class="explore-header">
             <h2>Explore</h2>
             
-            <div class="graph-controls">
-              <span>I want to see data by 
+            <div class="graph-controls span5 pull-right">
+              <span class="filter-label">Filter by</span>
               <div class="btn-group" data-toggle="buttons-radio">
                 <button type="button" class="btn btn-primary">Week</button>
                 <button type="button" class="btn btn-primary">Month</button>
                 <button type="button" class="btn btn-primary">Year</button>
-              </div></span>
-              <span>I want to see
+              </div>
+              <span class="filter-label">Show </span>
               <div class="btn-group">
                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                   This Week
@@ -83,7 +83,7 @@
                   <li><a href="#">Last Week</a></li>
                   <li><a href="#">Other</a></li>
                 </ul>
-              </div> </span>
+              </div>
             </div>
           </div>
 
@@ -91,58 +91,114 @@
 
           </div>
         </div>
-        <div class="span4 clearfix">
-          <h2>Selection Details</h2>
+        <div class="span4 selection-details clearfix">
+          <h3>Selection Details</h3>
           <div class="graph-selected">
+            <h4>May 20, 2013</h4>
+            <h5>Averages</h5>
             <div class="well current-data">
-              <div class="current-data-title">Average</div>
               <div class="now-data air-quality">Air Qual<br><strong>345</strong></div>
               <div class="now-data temp">Temp<br><strong>45</strong></div>
               <div class="now-data humidity">Humidity<br><strong>45</strong></div>
               <div class="now-data co2">co2<br><strong>145</strong></div>
-            </div>            
+            </div>
+            <h5>Events</h5>
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      Event 1 - This happened
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      Event 2 - That other thing happened
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                      Event 3 - More things happened
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
           </div>
           <div class="graph-details">
-            <div class="alert recent-event">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4><i class="icon-bell-alt icon-2x"></i>Warning this thing happened</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum </p>
-            </div>
-            <div class="alert recent-event">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4><i class="icon-bell-alt icon-2x"></i>Warning this thing happened</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum </p>
-            </div>
-            <div class="alert recent-event">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4><i class="icon-bell-alt icon-2x"></i>Warning this thing happened</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum </p>
-            </div>
-            <div class="alert recent-event">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4><i class="icon-bell-alt icon-2x"></i>Warning this thing happened</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum </p>
-            </div>
-            <div class="alert recent-event">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4><i class="icon-bell-alt icon-2x"></i>Warning this thing happened</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum </p>
-            </div>
-            <div class="alert recent-event">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4><i class="icon-bell-alt icon-2x"></i>Warning this thing happened</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum </p>
-            </div>
-            <div class="alert recent-event">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4><i class="icon-bell-alt icon-2x"></i>Warning this thing happened</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum </p>
-            </div>
-            <div class="alert recent-event">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4><i class="icon-bell-alt icon-2x"></i>Warning this thing happened</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum </p>
-            </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
+          <div class="summary-data">
+            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
+            <p class="pull-right">Events <span class="badge">2</span></p>
+          </div>
           </div>
         </div>
 

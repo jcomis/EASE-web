@@ -6061,11 +6061,12 @@ a.badge:focus {
   top: -35px;
 }
 .air-qual-gradient {
-  width: 80%;
+  width: 90%;
   height: 25px;
   border-radius: 2px;
   float: right;
   margin-right: 15px;
+  padding-left: 5%;
   background-color: #D82F2F;
   background: -webkit-gradient(linear, left center, right center, from(#37b726), to(#d82f2f), color-stop(0.5, #eae844));
   background: -moz-linear-gradient(left, #37b726 0%, #eae844 50%, #d82f2f 100%);

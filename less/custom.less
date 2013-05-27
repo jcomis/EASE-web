@@ -14,10 +14,7 @@
 .main-dashboard {
  //   border: 1px solid red;
 }
-.current-data {
-    padding-bottom: 35px;
-  //  position: relative;
-}
+
 .air-qual-box { padding: 5px 5px 5px 20px; width: 50%; float: left; margin-bottom: 10px;}
 .air-qual-value { font-size: 30px; margin-left: 22px;}
 .air-qual-gradient {
@@ -36,28 +33,30 @@ background: -moz-linear-gradient(left, #37B726 0%, #EAE844 50%, #D82F2F 100%);
     left: 40%;
     top: -30px;
 }
-.current-data-title {
-    text-align: center;
-    font-size: @fontSizeLarge;
-    margin-bottom: 15px;
-    margin-top: -10px;
+.current-averages {
+    margin: inherit 10px 15px 10px;
+    padding-top: 3px;
+    padding-bottom: 23px;
 }
-.now-data {
+.well .now-data {
     text-align: center;
     position: relative;
-    width: 24.7%;
+   // padding: 0;
+    width: 24.5%;
     float: left;
-    font-size: @fontSizeLarge;
+    font-size: 1.4em;
     border-right: 1px solid rgba(0,0,0,.2);
+    overflow: hidden;
     .box-shadow(inset -1px 0px 1px rgba(255,255,255,.95));
 }
 .now-data:last-child {
         border-right: none;
     }
-.air-quality { color: @green; }
+.air-quality { color: @grayDark; white-space:nowrap; }
 .temp { color: @red; }
 .humidity { color: @blue; }
-.co2 { color: @purple;}
+.co2 { color: @purple; padding-top: 1px;}
+.average { display: block;}
 
 .graph {
 

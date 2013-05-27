@@ -6048,9 +6048,6 @@ a.badge:focus {
   float: left;
   width: 50%;
 }
-.current-data {
-  padding-bottom: 35px;
-}
 .air-qual-box {
   padding: 5px 5px 5px 20px;
   width: 50%;
@@ -6076,19 +6073,19 @@ a.badge:focus {
   left: 40%;
   top: -30px;
 }
-.current-data-title {
-  text-align: center;
-  font-size: 17.5px;
-  margin-bottom: 15px;
-  margin-top: -10px;
+.current-averages {
+  margin: inherit 10px 15px 10px;
+  padding-top: 3px;
+  padding-bottom: 23px;
 }
-.now-data {
+.well .now-data {
   text-align: center;
   position: relative;
-  width: 24.7%;
+  width: 24.5%;
   float: left;
-  font-size: 17.5px;
+  font-size: 1.4em;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   -webkit-box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
   -moz-box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
   box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
@@ -6097,7 +6094,8 @@ a.badge:focus {
   border-right: none;
 }
 .air-quality {
-  color: #46a546;
+  color: #333333;
+  white-space: nowrap;
 }
 .temp {
   color: #9d261d;
@@ -6107,6 +6105,10 @@ a.badge:focus {
 }
 .co2 {
   color: #7a43b6;
+  padding-top: 1px;
+}
+.average {
+  display: block;
 }
 .graph {
   background-color: rgba(0, 0, 0, 0.2);

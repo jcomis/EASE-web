@@ -6048,47 +6048,47 @@ a.badge:focus {
   float: left;
   width: 50%;
 }
-.current-data {
-  padding-bottom: 35px;
-}
 .air-qual-box {
-  padding: 5px 5px 5px 20px;
-  width: 50%;
+  padding: 35px 5px 5px 10px;
+  width: 95%;
   float: left;
   margin-bottom: 10px;
 }
 .air-qual-value {
   font-size: 30px;
-  margin-left: 22px;
+  left: 45%;
+  position: relative;
+  top: -35px;
 }
 .air-qual-gradient {
-  width: 80%;
+  width: 90%;
   height: 25px;
   border-radius: 2px;
   float: right;
   margin-right: 15px;
+  padding-left: 5%;
   background-color: #D82F2F;
   background: -webkit-gradient(linear, left center, right center, from(#37b726), to(#d82f2f), color-stop(0.5, #eae844));
   background: -moz-linear-gradient(left, #37b726 0%, #eae844 50%, #d82f2f 100%);
 }
 .air-qual-gradient i {
   position: relative;
-  left: 40%;
-  top: -30px;
+  display: block;
+  top: -35px;
 }
-.current-data-title {
-  text-align: center;
-  font-size: 17.5px;
-  margin-bottom: 15px;
-  margin-top: -10px;
+.current-averages {
+  margin: inherit 10px 15px 10px;
+  padding-top: 3px;
+  padding-bottom: 23px;
 }
-.now-data {
+.well .now-data {
   text-align: center;
   position: relative;
-  width: 24.7%;
+  width: 24.5%;
   float: left;
-  font-size: 17.5px;
+  font-size: 1.4em;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   -webkit-box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
   -moz-box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
   box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
@@ -6097,7 +6097,8 @@ a.badge:focus {
   border-right: none;
 }
 .air-quality {
-  color: #46a546;
+  color: #333333;
+  white-space: nowrap;
 }
 .temp {
   color: #9d261d;
@@ -6107,6 +6108,16 @@ a.badge:focus {
 }
 .co2 {
   color: #7a43b6;
+  padding-top: 1px;
+}
+.average {
+  display: block;
+}
+.trend-box {
+  clear: both;
+  float: right;
+  margin-bottom: 12px;
+  border: 1px solid red;
 }
 .graph {
   background-color: rgba(0, 0, 0, 0.2);

@@ -14,18 +14,16 @@
 .main-dashboard {
  //   border: 1px solid red;
 }
-.current-data {
-    padding-bottom: 35px;
-  //  position: relative;
-}
-.air-qual-box { padding: 5px 5px 5px 20px; width: 50%; float: left; margin-bottom: 10px;}
-.air-qual-value { font-size: 30px; margin-left: 22px;}
+
+.air-qual-box { padding: 35px 5px 5px 10px; width: 95%; float: left; margin-bottom: 10px;}
+.air-qual-value { font-size: 30px; left: 45%; position: relative; top: -35px; }
 .air-qual-gradient {
-    width: 80%;
+    width: 90%;
     height: 25px;
     border-radius: 2px;
     float: right;
     margin-right: 15px;
+    padding-left: 5%;
     background-color: #D82F2F;
 background: -webkit-gradient(linear, left center, right center, from(#37B726), to(#D82F2F), color-stop(.5,#EAE844));
 background: -moz-linear-gradient(left, #37B726 0%, #EAE844 50%, #D82F2F 100%);
@@ -33,31 +31,36 @@ background: -moz-linear-gradient(left, #37B726 0%, #EAE844 50%, #D82F2F 100%);
 }
 .air-qual-gradient i {
     position: relative;
-    left: 40%;
-    top: -30px;
+    display: block;
+    top:-35px;
+
 }
-.current-data-title {
-    text-align: center;
-    font-size: @fontSizeLarge;
-    margin-bottom: 15px;
-    margin-top: -10px;
+.current-averages {
+    margin: inherit 10px 15px 10px;
+    padding-top: 3px;
+    padding-bottom: 23px;
 }
-.now-data {
+.well .now-data {
     text-align: center;
     position: relative;
-    width: 24.7%;
+   // padding: 0;
+    width: 24.5%;
     float: left;
-    font-size: @fontSizeLarge;
+    font-size: 1.4em;
     border-right: 1px solid rgba(0,0,0,.2);
+    overflow: hidden;
     .box-shadow(inset -1px 0px 1px rgba(255,255,255,.95));
 }
 .now-data:last-child {
         border-right: none;
     }
-.air-quality { color: @green; }
+.air-quality { color: @grayDark; white-space:nowrap; }
 .temp { color: @red; }
 .humidity { color: @blue; }
-.co2 { color: @purple;}
+.co2 { color: @purple; padding-top: 1px;}
+.average { display: block;}
+
+.trend-box { clear: both; float: right; margin-bottom: 12px; border: 1px solid red;}
 
 .graph {
 

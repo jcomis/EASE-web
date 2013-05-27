@@ -6049,14 +6049,14 @@ a.badge:focus {
   width: 50%;
 }
 .air-qual-box {
-  padding: 35px 5px 5px 20px;
-  width: 50%;
+  padding: 35px 5px 5px 10px;
+  width: 95%;
   float: left;
   margin-bottom: 10px;
 }
 .air-qual-value {
   font-size: 30px;
-  left: 40%;
+  left: 45%;
   position: relative;
   top: -35px;
 }
@@ -6112,6 +6112,12 @@ a.badge:focus {
 }
 .average {
   display: block;
+}
+.trend-box {
+  clear: both;
+  float: right;
+  margin-bottom: 12px;
+  border: 1px solid red;
 }
 .graph {
   background-color: rgba(0, 0, 0, 0.2);

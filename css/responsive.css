@@ -813,6 +813,15 @@
   .average:before {
     content: " ";
   }
+  .graph-controls .filter-label {
+    display: block;
+  }
+  .graph-controls .filter-label:last-child {
+    padding-top: 10px;
+  }
+  .graph-controls .filter-label:last-child .btn-group {
+    margin-left: 16px;
+  }
 }
 @media (max-width: 767px) {
   .navbar-fixed-top,

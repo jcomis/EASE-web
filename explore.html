@@ -66,16 +66,24 @@
             <h2>Explore</h2>
             
             <div class="graph-controls span5 pull-right">
-              <span class="filter-label">Filter by</span>
-              <div class="btn-group" data-toggle="buttons-radio">
-                <button type="button" class="btn btn-primary">Week</button>
-                <button type="button" class="btn btn-primary">Month</button>
-                <button type="button" class="btn btn-primary">Year</button>
-              </div>
-              <span class="filter-label">Show </span>
+              <span class="filter-label">Filter by
+                <div class="btn-group">
+                  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    Week 
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Week</a></li>
+                  <li><a href="#">Month</a></li>
+                  <li><a href="#">Year</a></li>
+                  </ul>
+                </div>
+
+              </span>
+              <span class="filter-label">Show
               <div class="btn-group">
                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                  This Week
+                  This Week 
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -84,6 +92,7 @@
                   <li><a href="#">Other</a></li>
                 </ul>
               </div>
+            </span>
             </div>
           </div>
 

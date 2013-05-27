@@ -6126,9 +6126,6 @@ a.badge:focus {
 .recent-event {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
   -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);

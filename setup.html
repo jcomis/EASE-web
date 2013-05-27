@@ -37,7 +37,7 @@
 
 			current = $(this);
 
-			$('#wrapper').scrollTo($(this).attr('href'), 800);		
+			$('#slider_wrapper').scrollTo($(this).attr('href'), 800);		
 
 			return false;
 		});
@@ -53,13 +53,13 @@
 		width = $(window).width();
 		height = $(window).height();
 
-		mask_width = width * $('.item').length;
+		mask_width = width * $('.slider_item').length;
 
 		$('#debug').html(width  + ' ' + height + ' ' + mask_width);
 
-		$('#wrapper, .item').css({width: width, height: height});
-		$('#mask').css({width: mask_width, height: height});
-		$('#wrapper').scrollTo($('a.selected').attr('href'), 0);
+		$('#slider_wrapper, .slider_item').css({width: width, height: height});
+		$('#slider_mask').css({width: mask_width, height: height});
+		$('#slider_wrapper').scrollTo($('a.selected').attr('href'), 0);
 
 	}
 
@@ -100,25 +100,24 @@
     <!-- END OF NAV -->
 
     <div class="container">
-      <!-- Example row of columns -->
     <form class="form-horizontal">
   
 	<div class="row">
-		<div id="wrapper">
-			<div id="mask">
+		<div class="span12">
+		<div id="slider_wrapper">
+			<div id="slider_mask">
 
-				<div id="item1" class="item">
-
+				<div id="item1" class="slider_item">
 					<a name="item1"></a>
 					<div class="span8 offset2">
-						<div class="dialog">
+						<div class="setup_step">
 						  
 							<div class="modal-header">
 						    	<div class="row">
-									<div class="span3">
+									<div class="span4">
 										<h3>Device Connection</h3>
 									</div>
-									<div class="span4 middle">
+									<div class="span3">
 										<div class="progress progress-success progress-striped">
 									  		<div class="bar" style="width: 25%"></div>
 										</div>
@@ -138,7 +137,6 @@
 							</div>
 						
 						  <div class="modal-footer">
-						    <!-- <a href="index.html" class="btn btn-large">Nope</a> -->
 						    <a href="#item2" class="btn btn-large btn-info panel">Continue</a>
 						  </div>
 						
@@ -146,16 +144,16 @@
 					</div>
 				</div>
 
-				<div id="item2" class="item">
+				<div id="item2" class="slider_item">
 					<a name="item2"></a>
 					<div class="span8 offset2">
-						<div class="dialog">
+						<div class="setup_step">
 						  <div class="modal-header">
 					    	<div class="row">
-								<div class="span3">
+								<div class="span4">
 									<h3>General Information</h3>
 								</div>
-								<div class="span4 middle">
+								<div class="span3">
 									<div class="progress progress-success progress-striped">
 								  		<div class="bar" style="width: 50%"></div>
 									</div>
@@ -204,16 +202,16 @@
 					  </div>
 				</div>
 
-				<div id="item3" class="item">
+				<div id="item3" class="slider_item">
 					<a name="item3"></a>
 					<div class="span8 offset2">
-						<div class="dialog">
+						<div class="setup_step">
 						  <div class="modal-header">
 						    	<div class="row">
-									<div class="span3">
+									<div class="span4">
 										<h3>Contact preferences</h3>
 									</div>
-									<div class="span4 middle">
+									<div class="span3">
 										<div class="progress progress-success progress-striped">
 									  		<div class="bar" style="width: 75%"></div>
 										</div>
@@ -257,16 +255,16 @@
 					  </div>
 				</div>
 
-				<div id="item4" class="item">
+				<div id="item4" class="slider_item">
 					<a name="item4"></a>
 					<div class="span8 offset2">
-						<div class="dialog">
+						<div class="setup_step">
 						  <div class="modal-header">
 						    	<div class="row">
-									<div class="span3">
+									<div class="span4">
 										<h3>Device Setup</h3>
 									</div>
-									<div class="span4 middle">
+									<div class="span3">
 										<div class="progress progress-success progress-striped">
 									  		<div class="bar" style="width: 100%"></div>
 										</div>
@@ -318,11 +316,12 @@
 						  </div>
 						  <div class="modal-footer">
 						    <a href="#item3" class="btn btn-large panel">Back</a>
-						    <a href="index.html" class="btn btn-large btn-info">Submit</a>
+						    <a href="index.html?status=first" class="btn btn-large btn-info">Submit</a>
 						  </div>
 						</div>
 					  </div>
-				</div>
+				  </div>
+			  </div>
 
 			</div>
 		</div>

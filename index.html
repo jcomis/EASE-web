@@ -12,6 +12,25 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
+	<!-- Scripts so jquery could be used in the doc -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		function getUrlVars()
+		{
+		    var vars = [], hash;
+		    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+		    for(var i = 0; i < hashes.length; i++)
+		    {
+		        hash = hashes[i].split('=');
+		        vars.push(hash[0]);
+		        vars[hash[0]] = hash[1];
+		    }
+		    return vars;
+		}
+	</script>
+
+    
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -23,6 +42,7 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="ico/favicon.png">
+
   </head>
 
   <body>
@@ -41,10 +61,10 @@
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="explore.html">Explore</a></li>
               <li><a href="#">Compare</a></li>
-              <li><a href="#">Improve</a></li>
+              <li><a href="improve.html">Improve</a></li>
             </ul>
             <ul class="nav pull-right">
-              <li><a href="account.html">Account</a></li>
+              <li><a href="setup.html">Account</a></li>
               <li><a href="#">Sign Out</a></li>
             </ul>
             <!--<form class="navbar-form pull-right">
@@ -59,7 +79,37 @@
     <!-- END OF NAV -->
 
     <div class="container main-dashboard">
-      <!-- Example row of columns -->
+      <!-- Alert Center-->
+      <div class="row">
+        <div class="span8">
+			<div class="alert alert-success hide" id="first_time">
+			  <button type="button" class="close" data-dismiss="alert">&times;</button>
+			  <h4>Saved!</h4>
+			  Thank you for setting up your preferences
+			</div>
+			
+			<div class="alert alert-success hide" id="action_taken">
+			  <button type="button" class="close" data-dismiss="alert">&times;</button>
+			  <h4>Action Taken!</h4>
+			  We'll contact you in an hour to see how that worked out for you 
+			</div>
+		</div>
+	  </div>
+	<script>
+		$(function(){
+			var status = getUrlVars()["status"];
+			if (status == "saved") {
+				$("#first_time").show().delay(2000);
+			}
+			else if (status == "action_taken") {
+				$("#action_taken").show().delay(2000);
+			}; 
+		});
+		
+	</script>	
+
+
+      <!-- Dashboard-->
       <div class="row">
         <div class="span8">
           <div class="row">

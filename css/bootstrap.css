@@ -6049,14 +6049,16 @@ a.badge:focus {
   width: 50%;
 }
 .air-qual-box {
-  padding: 5px 5px 5px 20px;
+  padding: 35px 5px 5px 20px;
   width: 50%;
   float: left;
   margin-bottom: 10px;
 }
 .air-qual-value {
   font-size: 30px;
-  margin-left: 22px;
+  left: 40%;
+  position: relative;
+  top: -35px;
 }
 .air-qual-gradient {
   width: 80%;
@@ -6070,8 +6072,8 @@ a.badge:focus {
 }
 .air-qual-gradient i {
   position: relative;
-  left: 40%;
-  top: -30px;
+  display: block;
+  top: -35px;
 }
 .current-averages {
   margin: inherit 10px 15px 10px;

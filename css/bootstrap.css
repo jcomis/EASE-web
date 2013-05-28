@@ -6279,6 +6279,9 @@ a.badge:focus {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+.box div {
+  font-size: 12px;
+}
 #alert_settings {
   padding-left: 30px;
   border-left: 1px solid #999;

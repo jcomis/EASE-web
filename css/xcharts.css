@@ -1,5 +1,5 @@
 .xchart .line {
-  stroke-width: 3px;
+  stroke-width: 2px;
   fill: none;
 }
 .xchart .fill {
@@ -13,7 +13,7 @@
   fill: none;
 }
 .xchart .axis .tick {
-  stroke: #EEE;
+  stroke: rgba(0, 0, 0, 0.2);
   stroke-width: 1px;
 }
 .xchart .axis text {

@@ -6120,8 +6120,7 @@ a.badge:focus {
   border: 1px solid red;
 }
 .graph {
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 250px;
+  height: 300px;
 }
 .recent-event {
   padding: 10px;

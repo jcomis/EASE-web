@@ -12,9 +12,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/xcharts.css" rel="stylesheet">
-
-	<!-- Scripts so jquery could be used in the doc -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/xcharts.js"></script>
 	<script>
 		function getUrlVars()
 		{
@@ -136,7 +136,75 @@
           </div>
           <div class="today-graph">
             <h3>Air Quality Today <small><em>as of 10:32pm 5/20/2013</em></small></h3>
-            <div class="graph">GRAPH will go here</div>
+            <div class="graph">
+              <figure style="margin-left:-20px;width: 100%; height: 300px;" id="example4"></figure>
+<script>
+    (function () {
+      var tt = document.createElement('div'),
+  leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+tt.className = 'ex-tooltip';
+document.body.appendChild(tt);
+
+      var data = {
+  "xScale": "time",
+  "yScale": "linear",
+  "main": [
+    {
+      "className": ".today-qual",
+      "data": [
+        {
+          "x": "2012-11-05T00:31",
+          "y": 23
+        },
+        {
+          "x": "2012-11-05T03:42",
+          "y": 32
+        },
+        {
+          "x": "2012-11-05T05:01",
+          "y": 55
+        },
+        {
+          "x": "2012-11-05T10:55",
+          "y": 12
+        },
+        {
+          "x": "2012-11-05T13:12",
+          "y": 14
+        },
+        {
+          "x": "2012-11-05T15:40",
+          "y": 23
+        },
+        {
+          "x": "2012-11-05T19:00",
+          "y": 40
+        }
+      ]
+    }
+  ]
+};
+      var opts = {
+  "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
+  "tickFormatX": function (x) { return d3.time.format('%I%p')(x); },
+  "mouseover": function (d, i) {
+    var pos = $(this).offset();
+    $(tt).text(d3.time.format('%A')(d.x) + ': ' + d.y)
+      .css({top: 10 + pos.top, left: 20 + pos.left, position: 'absolute'})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt).hide();
+  }
+};
+      
+      var myChart = new xChart('line-dotted', data, '#example4', opts);
+      
+    }());
+    </script>
+
+            </div>
           </div>
           
           
@@ -168,7 +236,9 @@
       </div>
 
       <hr>
-
+<figure style="width: 400px; height: 300px;" id="example3"></figure>
+      
+    
       <footer>
         <p>&copy; Company 2013</p>
       </footer>
@@ -178,8 +248,8 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/xcharts.js"></script>
+
+    <script src="js/graphs.js"></script>
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>

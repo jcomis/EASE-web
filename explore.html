@@ -11,6 +11,10 @@
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+        <link href="css/xcharts.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/xcharts.js"></script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -97,8 +101,289 @@
           </div>
 
           <div class="explore-graph">
-
+            <div class="chart-container">
+              <h4>Air Quality</h4>
+              <figure style="margin-left:-30px;width: 100%; height: 150px;" id="airqual-chart"></figure>
+            </div>
+            <div class="chart-container">
+              <h4>CO<sup>2</sup></h4>
+              <figure style="margin-left:-30px;width: 100%; height: 150px;" id="co2-chart"></figure>
+            </div>
+            <div class="chart-container">
+              <h4>Temperature</h4>
+              <figure style="margin-left:-30px;width: 100%; height: 150px;" id="temp-chart"></figure>
+            </div>
+            <div class="chart-container">
+              <h4>Humidity</h4>
+              <figure style="margin-left:-30px;width: 100%; height: 150px;" id="humidity-chart"></figure>
+            </div>
           </div>
+
+          <script>
+    (function () {
+      var tt1 = document.createElement('div'),
+  leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+tt1.className = 'ex-tooltip';
+document.body.appendChild(tt1);
+
+      var data = {
+  "xScale": "time",
+  "yScale": "linear",
+  "main": [
+    {
+      "className": ".today-qual",
+      "data": [
+        {
+          "x": "2013-05-12T00:31",
+          "y": 23
+        },
+        {
+          "x": "2013-05-13T03:42",
+          "y": 32
+        },
+        {
+          "x": "2013-05-14T05:01",
+          "y": 34
+        },
+        {
+          "x": "2013-05-15T10:55",
+          "y": 22
+        },
+        {
+          "x": "2013-05-16T13:12",
+          "y": 18
+        },
+        {
+          "x": "2013-05-17T15:40",
+          "y": 23
+        },
+        {
+          "x": "2013-05-18T19:00",
+          "y": 40
+        }
+
+      ]
+    }
+  ]
+};
+      var opts = {
+  "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
+  "tickFormatX": function (x) { return d3.time.format('%b %e')(x); },
+  "mouseover": function (d, i) {
+    var pos = $(this).offset();
+    $(tt1).text(d3.time.format('%b %e')(d.x) + ': ' + d.y)
+      .css({top: 15 + pos.top, left: 15 + pos.left, position: 'absolute'})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt1).hide();
+  }
+};
+      
+      var myChart = new xChart('line-dotted', data, '#airqual-chart', opts);
+      
+    }());
+    </script>
+    <script>
+    (function () {
+      var tt1 = document.createElement('div'),
+  leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+tt1.className = 'ex-tooltip';
+document.body.appendChild(tt1);
+
+      var data = {
+  "xScale": "time",
+  "yScale": "linear",
+  "main": [
+    {
+      "className": ".today-qual",
+      "data": [
+        {
+          "x": "2013-05-12T00:31",
+          "y": 100
+        },
+        {
+          "x": "2013-05-13T03:42",
+          "y": 32
+        },
+        {
+          "x": "2013-05-14T05:01",
+          "y": 34
+        },
+        {
+          "x": "2013-05-15T10:55",
+          "y": 80
+        },
+        {
+          "x": "2013-05-16T13:12",
+          "y": 120
+        },
+        {
+          "x": "2013-05-17T15:40",
+          "y": 180
+        },
+        {
+          "x": "2013-05-18T19:00",
+          "y": 220
+        }
+
+      ]
+    }
+  ]
+};
+      var opts = {
+  "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
+  "tickFormatX": function (x) { return d3.time.format('%b %e')(x); },
+  "mouseover": function (d, i) {
+    var pos = $(this).offset();
+    $(tt1).text(d3.time.format('%b %e')(d.x) + ': ' + d.y+'ppm')
+      .css({top: 15 + pos.top, left: 15 + pos.left, position: 'absolute'})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt1).hide();
+  }
+};
+      
+      var myChart = new xChart('line-dotted', data, '#co2-chart', opts);
+      
+    }());
+    </script>
+    <script>
+    (function () {
+      var tt1 = document.createElement('div'),
+  leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+tt1.className = 'ex-tooltip';
+document.body.appendChild(tt1);
+
+      var data = {
+  "xScale": "time",
+  "yScale": "linear",
+  "main": [
+    {
+      "className": ".today-qual",
+      "data": [
+        {
+          "x": "2013-05-12T00:31",
+          "y": 66
+        },
+        {
+          "x": "2013-05-13T03:42",
+          "y": 68
+        },
+        {
+          "x": "2013-05-14T05:01",
+          "y": 54
+        },
+        {
+          "x": "2013-05-15T10:55",
+          "y": 50
+        },
+        {
+          "x": "2013-05-16T13:12",
+          "y": 72
+        },
+        {
+          "x": "2013-05-17T15:40",
+          "y": 68
+        },
+        {
+          "x": "2013-05-18T19:00",
+          "y": 75
+        }
+
+      ]
+    }
+  ]
+};
+      var opts = {
+  "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
+  "tickFormatX": function (x) { return d3.time.format('%b %e')(x); },
+  "mouseover": function (d, i) {
+    var pos = $(this).offset();
+    $(tt1).text(d3.time.format('%b %e')(d.x) + ': ' + d.y + '°F')
+      .css({top: 15 + pos.top, left: 15 + pos.left, position: 'absolute'})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt1).hide();
+  }
+};
+      
+      var myChart = new xChart('line-dotted', data, '#temp-chart', opts);
+      
+    }());
+    </script>
+    <script>
+    (function () {
+      var tt1 = document.createElement('div'),
+  leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+tt1.className = 'ex-tooltip';
+document.body.appendChild(tt1);
+
+      var data = {
+  "xScale": "time",
+  "yScale": "linear",
+  "main": [
+    {
+      "className": ".today-qual",
+      "data": [
+        {
+          "x": "2013-05-12T00:31",
+          "y": 23
+        },
+        {
+          "x": "2013-05-13T03:42",
+          "y": 25
+        },
+        {
+          "x": "2013-05-14T05:01",
+          "y": 28
+        },
+        {
+          "x": "2013-05-15T10:55",
+          "y": 28
+        },
+        {
+          "x": "2013-05-16T13:12",
+          "y": 29
+        },
+        {
+          "x": "2013-05-17T15:40",
+          "y": 29
+        },
+        {
+          "x": "2013-05-18T19:00",
+          "y": 29.5
+        }
+
+      ]
+    }
+  ]
+};
+      var opts = {
+  "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
+  "tickFormatX": function (x) { return d3.time.format('%b %e')(x); },
+  "mouseover": function (d, i) {
+    var pos = $(this).offset();
+    $(tt1).text(d3.time.format('%b %e')(d.x) + ': ' + d.y + '%')
+      .css({top: 15 + pos.top, left: 15 + pos.left, position: 'absolute'})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt1).hide();
+  }
+};
+      
+      var myChart = new xChart('line-dotted', data, '#humidity-chart', opts);
+      
+    }());
+    </script>
+
         </div>
         <div class="span4 selection-details clearfix">
           <h3>Selection Details</h3>
@@ -224,7 +509,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
+    
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>

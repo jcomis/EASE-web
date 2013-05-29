@@ -116,6 +116,7 @@
           <div class="row">
             <h2>Current Air Quality</h2>
             <div class="span4">
+
             <div class="air-qual-box">
               <div class="air-qual-gradient">
                 <span class="air-qual-value">56<i class="icon-sort-down icon-2x"></i></span>   
@@ -128,6 +129,7 @@
             <div class="trend-box">Trend? onec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</div>
           </div>
         </div>
+        <h5>Todays Averages</h5>
           <div class="well current-averages">
             <div class="now-data air-quality">Air Qual<span class="average"><strong>345</strong></span></div>
               <div class="now-data temp">Temp<span class="average"><strong>45°F</strong></span></div>
@@ -137,7 +139,7 @@
           <div class="today-graph">
             <h3>Air Quality Today <small><em>as of 10:32pm 5/20/2013</em></small></h3>
             <div class="graph">
-              <figure style="margin-left:-20px;width: 100%; height: 300px;" id="example4"></figure>
+              <figure style="margin-left:-20px;width: 100%; height: 300px;" id="dash-chart"></figure>
 <script>
     (function () {
       var tt = document.createElement('div'),
@@ -199,7 +201,7 @@ document.body.appendChild(tt);
   }
 };
       
-      var myChart = new xChart('line-dotted', data, '#example4', opts);
+      var myChart = new xChart('line-dotted', data, '#dash-chart', opts);
       
     }());
     </script>

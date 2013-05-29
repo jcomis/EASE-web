@@ -6086,7 +6086,7 @@ a.badge:focus {
   position: relative;
   width: 24.5%;
   float: left;
-  font-size: 1.4em;
+  font-size: 1em;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   overflow: hidden;
   -webkit-box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
@@ -6172,10 +6172,23 @@ a.badge:focus {
   padding-bottom: 30px;
 }
 .explore-graph {
-  background-color: rgba(0, 0, 0, 0.2);
   margin-top: 10px;
-  height: 580px;
   clear: both;
+}
+.ex-tooltip {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 3px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.chart-container h4 {
+  padding-top: -5px;
+  margin-left: 20px;
+  margin-bottom: -10px;
 }
 .graph-details {
   position: relative;

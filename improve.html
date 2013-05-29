@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>EASE Air quality sensor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+	<!-- Scripts so jquery could be used in the doc -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		function getUrlVars()
+		{
+		    var vars = [], hash;
+		    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+		    for(var i = 0; i < hashes.length; i++)
+		    {
+		        hash = hashes[i].split('=');
+		        vars.push(hash[0]);
+		        vars[hash[0]] = hash[1];
+		    }
+		    return vars;
+		}
+	</script>
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">EASE</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="#">Compare</a></li>
+              <li class="active"><a href="improve.html">Improve</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="setup.html">Account</a></li>
+              <li><a href="#">Sign Out</a></li>
+            </ul>
+            <!--<form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- END OF NAV -->
+
+    <div class="container">
+
+      <div class="row">
+        <div class="span2">
+            <h2>Improve</h2>
+        </div>
+        <div class="span10">
+
+            <div class="row box">
+                <div class="span2"><b>Room:</b> Bedroom</div>
+                <div class="span2"><b>Pets:</b> None</div>
+                <div class="span2"><b>Air Purifier:</b> Yes</div>
+                <div class="span2"><b>Floor: </b>Carpet</div>
+                <div class="span1"><b>HVAC: </b>Cool</div>
+                <div class="span1"><a href="" style="float:right;padding-right:30px;">Edit</a></div>
+            </div>
+
+            <br>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+
+            <div class="span6">
+
+                <div id="improved">
+
+                    <h4>Actions that have improved air quality</h4>
+
+                    <div class="accordion" id="actions_improved">
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#actions_improved" href="#collapseOne">
+                                Turned on Air filter
+                              </a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                    <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#actions_improved" href="#collapseTwo">
+                                Dusted with damp cloth
+                              </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                    <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#actions_improved" href="#collapseThree">
+                                Closed Windows
+                              </a>
+                            </div>
+                            <div id="collapseThree" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                    <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="worsened">
+                  <h4>Actions that have worsened air quality</h4>
+
+                    <div class="accordion" id="actions_worsened">
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#actions_worsened" href="#w-collapseOne">
+                                Opened window
+                              </a>
+                            </div>
+                            <div id="w-collapseOne" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                    <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#actions_worsened" href="#w-collapseTwo">
+                                Cooking
+                              </a>
+                            </div>
+                            <div id="w-collapseTwo" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                    <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#actions_worsened" href="#w-collapseThree">
+                                Turned on fan
+                              </a>
+                            </div>
+                            <div id="w-collapseThree" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                    <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                    <tr><td><a>Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <div class="span6">
+          <div id="alert_settings">
+            <h4>Alert Settings</h4>
+
+            I want to receive an alert when:
+            <select class="span3" id="notify_when">
+                <option>Never</option>
+                <option selected="selected">When the device detects a spike</option>
+                <option>When the device detects a spike or drop</option>
+            </select>
+
+              <script>
+                $('#notify_when').change(function(){
+                  if($('#notify_when').val() == 'Never'){
+                      $('#data_types').fadeOut();
+                      $('#follow-up').fadeOut();
+                  }
+                  else {
+                      $('#data_types').fadeIn();
+                      $('#follow-up').fadeIn();
+                  };
+                });
+              </script>
+
+            <div class="btn-group" data-toggle="buttons-checkbox" id="data_types">
+              <button type="button" class="btn">Particles</button>
+              <button type="button" class="btn">Temperature </button>
+              <button type="button" class="btn">Humidity</button>
+              <button type="button" class="btn">Co2</button>
+            </div>
+
+            <br>   <br><br>
+
+            <div id="follow-up">
+                After receiving an alert, I want to get a follow-up alert:
+                <select class="span2">
+                    <option>Never</option>
+                    <option>Only for spikes</option>
+                    <option selected="selected">Always</option>
+                </select>
+             </div>
+
+            <br>
+
+            I want to receive personalized suggestions:
+            <select class="span2" id="suggestions">
+                <option>Never</option>
+                <option>Regularly</option>
+                <option>Only on weekends</option>
+            </select>
+            <br><br>
+
+              My preferred method of notifications is:
+              <select class="span2" id="alerts" name="alerts">
+                <option disabled="disabled">Select Method</option>
+                  <option selected="selected">SMS</option>
+                  <option>Email</option>
+                  <option>Dashboard</option>
+              </select>
+
+              <br><br>
+              <a href="#" class="btn btn-info" id="cause-save">Save</a>
+              <a href="index.html" class="btn">Reset</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

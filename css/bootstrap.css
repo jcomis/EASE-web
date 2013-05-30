@@ -6176,6 +6176,7 @@ a.badge:focus {
   clear: both;
 }
 .ex-tooltip {
+  display: none;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.7);

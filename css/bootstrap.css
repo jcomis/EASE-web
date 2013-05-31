@@ -6130,11 +6130,13 @@ a.badge:focus {
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 .recent-event i {
+  margin-left: 5px;
   padding-right: 10px;
 }
 .recent-event h4 {
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  padding-top: 5px;
   border-bottom: 1px solid rgba(33, 33, 33, 0.15);
   -webkit-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.9);
   -moz-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.9);

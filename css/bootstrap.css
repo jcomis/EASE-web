@@ -6234,9 +6234,23 @@ a.badge:focus {
   background-clip: padding-box;
   outline: none;
 }
+.modal-header {
+  padding: 20px 15px;
+  border-bottom: 1px solid #eee;
+}
+.modal-header .close {
+  margin-top: 2px;
+}
+.modal-header h3 {
+  margin: 0;
+  line-height: 30px;
+}
 .progress {
   margin-top: 5px;
   margin-bottom: 0px;
+}
+.form_fields {
+  padding-left: 9%;
 }
 #slider_wrapper {
   width: 100%;

@@ -15,6 +15,9 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/d3.v3.min.js"></script>
     <script src="js/xcharts.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/justgage.js"></script>
+
 	<script>
 		function getUrlVars()
 		{
@@ -116,15 +119,29 @@
           <div class="row">
             <h2>Current Air Quality</h2>
             <div class="span4">
+              <div id="gauge" style="position: relative; height:190px; top:-30px;"></div>
+              <script>
+                var g = new JustGage({
+                id: "gauge", 
+                value: getRandomInt(54, 900),
+                min: 0,
+                max: 1000,
+                customSectors: [{
+                color : "#72ba64",
+                lo : 0,
+                hi : 250
+              }],
+                shadowOpacity:.4,
+                shadowSize:3,
+                shadowVerticalOffset:5,
+                label: "",
+                labelMinFontSize: 18,
+                labelFontColor: "#5a5a5a",
+                counter: true,
 
-            <div class="air-qual-box">
-              <div class="air-qual-gradient">
-                <span class="air-qual-value">56<i class="icon-sort-down icon-2x"></i></span>   
-              </div>
-              <span class="air-qual-label pull-left">0</span>
-              <span class="air-qual-label pull-right">100</span>
-            </div>
-          </div>
+                
+              }); 
+            </script></div>
           <div class="span4">
             <div class="trend-box">Trend? onec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</div>
           </div>
@@ -134,7 +151,7 @@
             <div class="now-data air-quality">Air Qual<span class="average"><strong>345</strong></span></div>
               <div class="now-data temp">Temp<span class="average"><strong>45°F</strong></span></div>
               <div class="now-data humidity">Humidity<span class="average"><strong>45%</strong></span></div>
-              <div class="now-data co2">CO<sup>2</sup><span class="average"><strong>145</strong></span></div>
+              <div class="now-data co2">CO<sub>2</sub><span class="average"><strong>145</strong></span></div>
           </div>
           <div class="today-graph">
             <h3>Air Quality Today <small><em>as of 10:32pm 5/20/2013</em></small></h3>
@@ -215,30 +232,36 @@ document.body.appendChild(tt);
         <div class="span4">
           <h2>Recent Events</h2>
           <div class="alert recent-event">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <i class="icon-info-sign icon-2x pull-left"></i><h4>Warning: High Humiditiy Levels</h4>
+            
+            <h4><i class="icon-info-sign icon-2x pull-left"></i>Warning: High Humiditiy Levels</h4>
             <p>EASE has detected average humidity levels of above 65% for more than 3 days. Humidity levels above 60% put your environment at a high risk for mold growth.</p>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" data-dismiss="alert">Take Action</button>
           </div>
+
           <div class="alert alert-error recent-event">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <i class="icon-warning-sign icon-2x pull-left"></i><h4>Air Quality Spike</h4>
+            <h4><i class="icon-warning-sign icon-2x pull-left"></i>Air Quality Spike</h4>
             <p>Your air quality has deteriorated rapidly in the past hour. Do you know what could have caused it?</p>
+                        <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" data-dismiss="alert">Take Action</button>
           </div>
           <div class="alert alert-success recent-event">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <i class="icon-heart icon-2x pull-left"></i><h4>Goal Reached!</h4>
-            <p>Congratulations! You reached your goal of maintaining CO<sup>2</sup> levels below 100ppm for one week!</p>
+            <h4><i class="icon-heart icon-2x pull-left"></i>Goal Reached!</h4>
+            <p>Congratulations! You reached your goal of maintaining CO<sub>2</sub> levels below 100ppm for one week!</p>
+                        <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" data-dismiss="alert">View Goals</button>
           </div>
           <div class="alert recent-event">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <i class="icon-pencil icon-2x pull-left"></i><h4>Input Required</h4>
+            <h4><i class="icon-pencil icon-2x pull-left"></i>Input Required</h4>
             <p>EASE needs feedback in order to make the best recommendations to improve your airquality. Please complete your air quality task on the improve page.</p>
+                        <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" data-dismiss="alert">Take Action</button>
           </div>
        </div>
       </div>
 
       <hr>
-<figure style="width: 400px; height: 300px;" id="example3"></figure>
+
       
     
       <footer>
@@ -251,7 +274,7 @@ document.body.appendChild(tt);
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="js/graphs.js"></script>
+
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>

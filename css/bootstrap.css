@@ -6168,6 +6168,7 @@ a.badge:focus {
 .alert .improve {
   border: 0;
   border-top: 1px solid #e7a51d;
+  border-right: 1px solid #e7a51d;
   background: #fbeed5;
 }
 .alert-success .dismiss {
@@ -6179,6 +6180,7 @@ a.badge:focus {
 .alert-success .improve {
   border: 0;
   border-top: 1px solid #6da43f;
+  border-right: 1px solid #6da43f;
   background: #d6e9c6;
 }
 .alert-error .dismiss {
@@ -6190,6 +6192,7 @@ a.badge:focus {
 .alert-error .improve {
   border: 0;
   border-top: 1px solid #b04557;
+  border-right: 1px solid #b04557;
   background: #eed3d7;
 }
 /* EXPLORE page */

@@ -89,22 +89,32 @@
 			  Thank you for setting up your account. EASE will begin sensing and helping you improve your air quality
 			</div>
 
-			<div class="alert alert-success hide" id="action_taken">
+			<div class="alert alert-success hide" id="follow-up">
 			  <button type="button" class="close" data-dismiss="alert">&times;</button>
-			  <h4>Action Taken!</h4>
-			  We'll contact you in an hour to see how that worked out for you
+			  <h4>Saved</h4>
+			  We'll contact you in an hour to see if the suggestion helped
 			</div>
+
+            <div class="alert alert-success hide" id="helped">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>Suggestion Saved</h4>
+              Glad to hear that helped, we'll remember it for next time
+            </div>
+
+            <div class="alert alert-warning hide" id="unhelped">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>Sorry to hear that</h4>
+              We'll provide a different suggestion for you next time
+            </div>
 		</div>
 	  </div>
 	<script>
 		$(function(){
 			var status = getUrlVars()["status"];
-			if (status == "first") {
-				$("#first_time").show().delay(2000);
-			}
-			else if (status == "action_taken") {
-				$("#action_taken").show().delay(2000);
-			};
+			if (status == "first") { $("#first_time").show().delay(2000);}
+			else if (status == "follow-up") { $("#follow-up").show().delay(2000);}
+            else if (status == "helped") { $("#helped").show().delay(2000);}
+            else if (status == "unhelped") {$("#unhelped").show().delay(2000);};
 		});
 
 	</script>

@@ -87,25 +87,21 @@
       <div class="row">
         <div class="span12">
 			<div class="alert alert-success hide" id="first_time">
-			  <button type="button" class="close" data-dismiss="alert">&times;</button>
 			  <h4>Device Activated!</h4>
 			  Thank you for setting up your account. EASE will begin sensing and helping you improve your air quality
 			</div>
 
 			<div class="alert alert-success hide" id="follow-up">
-			  <button type="button" class="close" data-dismiss="alert">&times;</button>
 			  <h4>Saved</h4>
 			  We'll contact you in an hour to see if the suggestion helped
 			</div>
 
             <div class="alert alert-success hide" id="helped">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
               <h4>Suggestion Saved</h4>
               Glad to hear that helped, we'll remember it for next time
             </div>
 
             <div class="alert alert-warning hide" id="unhelped">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
               <h4>Sorry to hear that</h4>
               We'll provide a different suggestion for you next time
             </div>
@@ -114,10 +110,10 @@
 	<script>
 		$(function(){
 			var status = getUrlVars()["status"];
-			if (status == "first") { $("#first_time").show().delay(2000);}
-			else if (status == "follow-up") { $("#follow-up").show().delay(2000);}
-            else if (status == "helped") { $("#helped").show().delay(2000);}
-            else if (status == "unhelped") {$("#unhelped").show().delay(2000);};
+			if (status == "first") { $("#first_time").show().delay(5000).slideUp(500);}
+			else if (status == "follow-up") { $("#follow-up").show().delay(5000).slideUp(500);}
+            else if (status == "helped") { $("#helped").show().delay(5000).slideUp(500);}
+            else if (status == "unhelped") {$("#unhelped").show().delay(5000).slideUp(500);};
 		});
 
 	</script>
@@ -132,7 +128,7 @@
               <div id="gauge" style="position: relative; height:190px; top:-30px;"></div>
               <script>
                 var g = new JustGage({
-                id: "gauge", 
+                id: "gauge",
                 value: getRandomInt(54, 900),
                 min: 0,
                 max: 1000,
@@ -148,8 +144,8 @@
                 labelMinFontSize: 18,
                 labelFontColor: "#5a5a5a",
                 counter: true,
-                
-              }); 
+
+              });
             </script></div>
           <div class="span4">
             <div class="trend-box">Trend? onec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</div>
@@ -241,7 +237,7 @@ document.body.appendChild(tt);
         <div class="span4">
           <h2>Recent Events</h2>
           <div class="alert recent-event">
-            
+
             <h4><i class="icon-info-sign icon-2x pull-left"></i>Warning: High Humiditiy Levels</h4>
             <p>EASE has detected average humidity levels of above 65% for more than 3 days. Humidity levels above 60% put your environment at a high risk for mold growth.</p>
             <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>

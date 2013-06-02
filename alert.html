@@ -33,17 +33,18 @@
       <div class="row">
         <div class="span10 offset1">
 		<br>
+
 <!-- Particle Spike ___________________________________________________________________________________________________________________-->
 			<div class="setup_step" id="spike">
 			  <div class="modal-header">
-			    	<i class="icon-warning-sign icon-3x pull-left"></i><h4>Particle Spike</h4>
+			    <i class="icon-warning-sign icon-3x pull-left"></i><h4>Particle Spike</h4>
 			  </div>
 			  <div class="modal-body">
-			    <p>High Particle amount detected.  Do you know what could have caused it?</p>
+			    <p>High particle amount detected (750µm).  Do you know what could have caused it?</p>
 			  </div>
 			  <div class="modal-footer">
-			    <a href="index.html" class="btn btn-large" id="spike-no">Nope</a>
-			    <a href="#" class="btn btn-large btn-info" id="spike-save">Yes I do</a>
+			    <a href="#" class="btn btn-large" id="spike-no">Nope</a>
+			    <a href="#" class="btn btn-large btn-info" id="spike-save">I have an idea</a>
 			  </div>
 			</div>
 
@@ -52,21 +53,22 @@
 					$("div#spike").hide();
 					$("div#spike-cause").show();
 				});
+                $("a#spike-no").click(function () {
+                    $("div#spike").hide();
+                    $("div#spike-suggestion").show();
+                });
 			</script>
 
 <!-- Spike, known action_________________________________________________________________________________________________________________-->
 
 			<div class="setup_step hide" id="spike-cause">
 			  <div class="modal-header">
-			    <table><tr>
-					<td width=22%><img src="img/alert.png" width="40px"></td>
-					<td><h4>Select cause of spike</h4></td>
-				</tr></table>
-			  </div>
+                  <i class="icon-info-sign icon-3x pull-left"></i><h4>Select possible cause of spike</h4>
+              </div>
 			  <div class="modal-body">
 				<center>
 				<select class="span3" id="action">
-				  <option selected="selected" disabled="disabled">Select an action</option>
+				  <option selected="selected" disabled="disabled">Select a possible cause</option>
 				  <option>Cooking</option>
 				  <option>Opened a window</option>
 				  <option>Dusted</option>
@@ -91,26 +93,22 @@
 			    <a href="#" class="btn btn-large btn-info" id="cause-save">Save</a>
 			  </div>
 			</div>
-			
+
 			<script>
 				$("a#cause-save").click(function () {
 					$("div#spike-cause").hide();
 					$("div#spike-suggestion").show();
 				});
 			</script>
-			
+
 <!-- Spike, suggestion_________________________________________________________________________________________________________________-->
 
 			<div class="setup_step hide" id="spike-suggestion">
 			  <div class="modal-header">
-			    <table><tr>
-					<td width=22%><img src="img/alert.png" width="40px"></td>
-					<td><h4>Suggestion</h4></td>
-				</tr></table>
+                  <i class="icon-comment-alt icon-3x pull-left"></i><h4>Suggestion</h4>
 			  </div>
 			  <div class="modal-body">
-				<p>Thanks for letting us know.  This will help us help you</p>
-				<p>Try <b>Turning on your air purifier</b> to see if that helps.</p>
+				<p>Try <b>Turning on your air purifier</b> to see if that helps.</p><p>Would you like a follow-up alert to see if this suggestion helped?</p>
 				<script>
 					$('#action').change(function(){
 					    if($('#action').val() == 'Other'){
@@ -124,12 +122,12 @@
 				<input class="span3 hide" type="text" placeholder="Enter an Action" id="custom_action">
 			  </div>
 			  <div class="modal-footer">
-			    <a href="index.html" class="btn btn-large">Nah</a>
-			    <a href="index.html?status=action_taken" class="btn btn-large btn-info">Ok, will do</a>
+			    <a href="index.html" class="btn btn-large">Don't follow-up</a>
+			    <a href="index.html?status=follow-up" class="btn btn-large btn-info">Follow-up</a>
 			  </div>
 			</div>
-					
-			
+
+
 
     <!-- Le javascript
     ================================================== -->

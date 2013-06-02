@@ -37,7 +37,7 @@
 
 			current = $(this);
 
-			$('#slider_wrapper').scrollTo($(this).attr('href'), 800);		
+			$('#slider_wrapper').scrollTo($(this).attr('href'), 800);
 
 			return false;
 		});
@@ -68,271 +68,367 @@
 
   <body>
 
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">EASE</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">Compare</a></li>
-              <li><a href="#">Improve</a></li>
-            </ul>
-            <ul class="nav pull-right">
-              <li><a href="account.html">Account</a></li>
-              <li><a href="#">Sign Out</a></li>
-            </ul>
-            <!--<form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-    <!-- END OF NAV -->
-
+  <br><br><br>
     <div class="container">
     <form class="form-horizontal">
-  
+
 	<div class="row">
 		<div class="span12">
-		<div id="slider_wrapper">
-			<div id="slider_mask">
 
-				<div id="item1" class="slider_item">
-					<a name="item1"></a>
-					<div class="span8 offset2">
-						<div class="setup_step">
-						  
-							<div class="modal-header">
-						    	<div class="row">
-									<div class="span4">
-										<h3>Device Connection</h3>
-									</div>
-									<div class="span3">
-										<div class="progress progress-success progress-striped">
-									  		<div class="bar" style="width: 25%"></div>
-										</div>
-									</div>
-							    </div>
-							</div>
-						
-							<div class="modal-body">
-								<p>To connect your device to your account, please enter the unique device code located on the bottom of the device. The code is 10 digits.</p>
-								<center><img src="img/device_id.png"></center><br>
-								<div class="control-group">
-							    	<label class="control-label" for="inputDeviceID">Device ID</label>
-							    	<div class="controls">
-							      		<input type="text" id="inputDeviceID" placeholder="Device ID">
-							    	</div>
-							    </div>
-							</div>
-						
-						  <div class="modal-footer">
-						    <a href="#item2" class="btn btn-large btn-info panel">Continue</a>
-						  </div>
-						
-						</div>
-					</div>
-				</div>
+            <div id="slider_wrapper">
+                <div id="slider_mask">
 
-				<div id="item2" class="slider_item">
-					<a name="item2"></a>
-					<div class="span8 offset2">
-						<div class="setup_step">
-						  <div class="modal-header">
-					    	<div class="row">
-								<div class="span4">
-									<h3>General Information</h3>
-								</div>
-								<div class="span3">
-									<div class="progress progress-success progress-striped">
-								  		<div class="bar" style="width: 50%"></div>
-									</div>
-								</div>
-						    </div>
-						  </div>
-						  <div class="modal-body">
-						    <p>The EASE works best when you provide feedback based on how you are feeling when you are near the device. EASE collects data by checking in with you periodically about your well-being</p><br>
-							<div class="control-group">
-						    	<label class="control-label" for="name">Name</label>
-						    	<div class="controls">
-						            <input id="name" placeholder="Name" type="text" AUTOCOMPLETE=OFF />
-								</div>
-							</div>
-							<div class="control-group">
-						    	<label class="control-label" for="email">Email</label>
-						    	<div class="controls">
-						            <input id="email" name="email" placeholder="name@domain.com" type="text" AUTOCOMPLETE=OFF />
-								</div>
-							</div>
-							<div class="control-group">
-						    	<label class="control-label" for="phone">Phone</label>
-						    	<div class="controls">
-	                                <input id="phone" name="phone" placeholder="XXX-XXX-XXXX" type="tel" AUTOCOMPLETE=OFF />
-								</div>
-							</div>
-							<div class="control-group">
-						    	<label class="control-label" for="twitter">Twitter</label>
-						    	<div class="controls">
-	                                <input id="twitter" name="twitter" type="text" placeholder="@username" AUTOCOMPLETE=OFF />
-								</div>
-							</div>
-							<div class="control-group">
-						    	<label class="control-label" for="zip">Zip</label>
-						    	<div class="controls">
-	                                <input id="zip" name="zip" type="tel" AUTOCOMPLETE=OFF />
-								</div>
-							</div>
-	                   
-						  </div>
-						  <div class="modal-footer">
-						    <a href="#item1" class="btn btn-large panel">Back</a>
-						    <a href="#item3" class="btn btn-large btn-info panel">Continue</a>
-						  </div>
-						</div>
-					  </div>
-				</div>
+    <!-- Step 1 ------------------------------------------------------------------------------->
 
-				<div id="item3" class="slider_item">
-					<a name="item3"></a>
-					<div class="span8 offset2">
-						<div class="setup_step">
-						  <div class="modal-header">
-						    	<div class="row">
-									<div class="span4">
-										<h3>Contact preferences</h3>
-									</div>
-									<div class="span3">
-										<div class="progress progress-success progress-striped">
-									  		<div class="bar" style="width: 75%"></div>
-										</div>
-									</div>
-							    </div>
-						  </div>
-						  <div class="modal-body">
-						    <p>The EASE works best when you provide feedback based on how you are feeling when you are near the device. EASE collects data by checking in with you periodically about your well-being</p>
-							
-                            <br><br>I'd like to be prompted to provide feedback
-                            <select id="feedback" name="feedback">
-                                <option selected="selected" disabled="disabled">Select Frequency</option>
-								<option>Daily</option>
-                                <option>Weekly</option>
-                                <option>Monthly</option>
-                            </select>
-							<hr>
-							EASE also provides alerts when your air quality and status changes rapidly.  This is to let you know of the change, but also help you take action through suggestions of how you can remedy the problem.<br><br>
-							<table>
-								<tr><td>I would like to receive alerts</td><td><input type="radio" name="alerts" value="always">Always</td></tr>
-								<tr><td></td><td><input type="radio" name="alerts" value="never">Never</td></tr>
-								<tr><td></td><td><input type="radio" name="alerts" value="type">Only when the following change rapidly:</td></tr>
-								<tr><td></td><td><input type="checkbox" name="change" value="type">Air Quality</td></tr>
-								<tr><td></td><td><input type="checkbox" name="change" value="type">Humidity</td></tr>
-								<tr><td></td><td><input type="checkbox" name="change" value="type">Temperature</td></tr>
-							</table>
-							<hr>																					
-							
-                            I'd like to receive my air quality notifications and alerts through
-                            <select id="alerts" name="alerts">
-								<option selected="selected" disabled="disabled">Select Method</option>
-                                <option>Email</option>
-                                <option>SMS</option>
-                            </select>
-						  </div>
-						  <div class="modal-footer">
-						    <a href="#item2" class="btn btn-large panel">Back</a>
-						    <a href="#item4" class="btn btn-large btn-info panel">Continue</a>
-						  </div>
-						</div>
-					  </div>
-				</div>
+                    <div id="step1" class="slider_item">
+                        <a name="step1"></a>
+                        <div class="span8 offset2">
+                            <div class="setup_step">
 
-				<div id="item4" class="slider_item">
-					<a name="item4"></a>
-					<div class="span8 offset2">
-						<div class="setup_step">
-						  <div class="modal-header">
-						    	<div class="row">
-									<div class="span4">
-										<h3>Device Setup</h3>
-									</div>
-									<div class="span3">
-										<div class="progress progress-success progress-striped">
-									  		<div class="bar" style="width: 100%"></div>
-										</div>
-									</div>
-							    </div>
-						  </div>
-						  <div class="modal-body">
-						    <p>Give your device a name that will help you identify it (e.g. Home, Work, Bedroom).  This name will be used when you receive alerts about the air quality around this device.</p>
-							<div class="control-group">
-						    	<label class="control-label" for="device">Device Name</label>
-						    	<div class="controls">
-	                                <input id="device" type="text" placeholder="i.e. Home, Work, Bedroom"AUTOCOMPLETE=OFF />
-								</div>
-							</div>   
-							<hr> 
-                                EASE can provice you with suggestions for improving your air quality when it reaches levels that cause you problems. It needs to konw what actions you are capable of doing near the device.<br><br>
-								<table>
-									<tr>
-										<td>I am able to</td>
-										<td><input type="checkbox" name="able" value="window">Open Window</td>
-										<td><input type="checkbox" name="able" value="filter">Turn on Air Filter</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td><input type="checkbox" name="able" value="fan">Turn on Fan</td>
-										<td><input type="checkbox" name="able" value="vacuum">Vacuum</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td><input type="checkbox" name="able" value="conditioner">Turn on Air Conditioner</td>
-										<td><input type="checkbox" name="able" value="Dust">Dust</td>
-									</tr>
-								</table>
-								<hr>
-                                Alerts and suggestions from EASE are only effective if you are near the sensor. providing the time periods when you are most frequently around the device helps limit messages to those times.<br><br>
-								<table>
-									<tr>
-										<td>I'm near the device</td>
-										<td><input type="checkbox" name="near" value="morning">Mornings (9am - noon)</td>
-										<td><input type="checkbox" name="near" value="afternoon">Afternoons (noon - 5pm)</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td><input type="checkbox" name="near" value="evening">Evenings (5pm - 10pm)</td>
-										<td><input type="checkbox" name="near" value="overnight">Overnight (10pm - 9am)</td>
-									</tr>
-								</table>
-								<br>
-						  </div>
-						  <div class="modal-footer">
-						    <a href="#item3" class="btn btn-large panel">Back</a>
-						    <a href="index.html?status=first" class="btn btn-large btn-info">Submit</a>
-						  </div>
-						</div>
-					  </div>
-				  </div>
-			  </div>
+                                <div class="modal-header">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <h3>Your EASE sensor</h3>
+                                        </div>
+                                        <div class="span3">
+                                            <div class="progress progress-success progress-striped">
+                                                <div class="bar" style="width: 25%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="modal-body">
+                                    <p>To connect your device to your account, please enter the unique device code located on the bottom of the device. The code is 10 digits.</p>
+                                    <hr>
+                                    <center><img src="img/device_id.png" width=200></center><br>
+
+                                    <div class="row">
+                                        <div class="span4 offset1">
+                                            <div class="control-group">
+                                                <label class="control-label" for="device">Device Name</label>
+                                                <div class="controls">
+                                                    <input id="device" type="text" placeholder="i.e. Home, Work, Bedroom"AUTOCOMPLETE=OFF />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="span4 offset1">
+                                            <div class="control-group">
+                                                <label class="control-label" for="inputDeviceID">Device ID</label>
+                                                <div class="controls">
+                                                    <input type="text" id="inputDeviceID" placeholder="XXXX-XX-XXXX">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                              <div class="modal-footer">
+                                <a href="#step2" class="btn btn-large btn-info panel">Continue</a>
+                              </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+    <!-- Step 2 ------------------------------------------------------------------------------->
+
+                    <div id="step2" class="slider_item">
+                        <a name="step2"></a>
+                        <div class="span8 offset2">
+                            <div class="setup_step">
+
+                                <div class="modal-header">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <h3>About your environment</h3>
+                                        </div>
+                                        <div class="span3">
+                                            <div class="progress progress-success progress-striped">
+                                                <div class="bar" style="width: 50%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>EASE can provide you with suggestions for improving your air quality when it reaches levels that cause you problems. It needs to konw what actions you are capable of doing near the device.</p>
+                                    <hr>
+
+                                    <div class="form_fields">
+
+                                        <div class="row">
+                                            <div class="span3">
+                                                I'm near the device during:
+                                            </div>
+                                            <div class="span3">
+                                                <label class="checkbox"><input type="checkbox" value="morning">Mornings (9am - noon)</label>
+                                                <label class="checkbox"><input type="checkbox" value="afternoon">Afternoons (noon - 5pm)</label>
+                                                <label class="checkbox"><input type="checkbox" value="evening">Evenings (5pm - 10pm)</label>
+                                                <label class="checkbox"><input type="checkbox" value="overnight">Overnight (10pm - 9am)</label>
+                                            </div>
+                                        </div>
+
+                                        <br><br>
+
+                                        <div class="row">
+                                            <div class="span3">
+                                                In the room with the device I have
+                                            </div>
+                                            <div class="span2">
+                                                <label class="checkbox"><input type="checkbox" value="cooling">Air Conditioning</label>
+                                                <label class="checkbox"><input type="checkbox" value="heating">Heating</label>
+                                                <label class="checkbox"><input type="checkbox" value="dehumidifier">A Dehumidifier</label>
+                                                <label class="checkbox"><input type="checkbox" value="plants">Plants</label>
+                                                <label class="checkbox"><input type="checkbox" value="cat">Cat(s)</label>
+                                            </div>
+                                            <div class="span2">
+                                                <label class="checkbox"><input type="checkbox" value="window">Windows</label>
+                                                <label class="checkbox"><input type="checkbox" value="filter">An air filter</label>
+                                                <label class="checkbox"><input type="checkbox" value="fan">A ceiling fan</label>
+                                                <label class="checkbox"><input type="checkbox" value="vacuum">A vacuum</label>
+                                                <label class="checkbox"><input type="checkbox" value="dog">Dog(s)</label>
+                                            </div>
+
+                                        </div>
+
+                                        <br><br>
+
+                                        <div class="row">
+                                            <div class="span3">
+                                                The floor is mostly covered by
+                                            </div>
+                                            <div class="span2">
+                                                <select class="span2" id="floor">
+                                                    <option>Carpet</option>
+                                                    <option>Hardwood</option>
+                                                    <option>Rugs</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <br>
+
+                                <div class="modal-footer">
+                                    <a href="#step1" class="btn btn-large panel">Back</a>
+                                    <a href="#step3" class="btn btn-large btn-info panel">Continue</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- Step 3 ------------------------------------------------------------------------------->
+
+                    <div id="step3" class="slider_item">
+                        <a name="step3"></a>
+                        <div class="span8 offset2">
+                            <div class="setup_step">
+
+
+                                <div class="modal-header">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <h3>How can we contact you?</h3>
+                                        </div>
+                                        <div class="span3">
+                                            <div class="progress progress-success progress-striped">
+                                                <div class="bar" style="width: 75%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-body">
+                                    <p>EASE provides alerts when your air quality and status changes rapidly.  This is to let you know of the change, but also help you take action through suggestions of how you can remedy the problem.</p>
+                                    <hr>
+                                    <div class="form_fields">
+
+                                        <div class="control-group">
+                                            <label class="control-label" for="name">Name</label>
+                                            <div class="controls">
+                                                <input id="name" placeholder="for personalized greetings" type="text" AUTOCOMPLETE=OFF />
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="email">Email</label>
+                                            <div class="controls">
+                                                <input id="email" name="email" placeholder="for email alerts" type="text" AUTOCOMPLETE=OFF />
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="phone">Phone</label>
+                                            <div class="controls">
+                                                <input id="phone" name="phone" placeholder="for text alerts" type="tel" AUTOCOMPLETE=OFF />
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="twitter">Twitter</label>
+                                            <div class="controls">
+                                                <input id="twitter" name="twitter" placeholder="for twitter alerts" type="text" AUTOCOMPLETE=OFF />
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="zip">Zip</label>
+                                            <div class="controls">
+                                                <input id="zip" name="zip" type="tel" placeholder="for regional air quality data" AUTOCOMPLETE="OFF" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a href="#step2" class="btn btn-large panel">Back</a>
+                                    <a href="#step4" class="btn btn-large btn-info panel">Continue</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- Step 4 ------------------------------------------------------------------------------->
+
+                    <div id="step4" class="slider_item">
+                        <a name="step4"></a>
+                        <div class="span8 offset2">
+                            <div class="setup_step">
+
+                                <div class="modal-header">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <h3>When should EASE alert you?</h3>
+                                        </div>
+                                        <div class="span3">
+                                            <div class="progress progress-success progress-striped">
+                                                <div class="bar" style="width: 100%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-body">
+                                    <p>Feedback from you will help the device learn what actions help improve the air quality in your room.  Below you can customize how and when you choose to be alerted</p>
+
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="span2 offset1">
+                                            I want to be alerted:
+                                        </div>
+                                        <div class="span3">
+                                            <select class="span4" id="notify_when">
+                                                <option>Never</option>
+                                                <option>when the device detects a spike in</option>
+                                                <option selected="selected">when the device detects a spike or drop in</option>
+                                            </select>
+                                        </div>
+
+                                        <script>
+                                            $('#notify_when').change(function(){
+                                              if($('#notify_when').val() == 'Never'){
+                                                  $('#data_types').fadeOut();
+                                                  $('#follow-up').fadeOut();
+                                              }
+                                              else {
+                                                  $('#data_types').fadeIn();
+                                                  $('#follow-up').fadeIn();
+                                              };
+                                            });
+                                        </script>
+                                        <br><br>
+                                        <div class="span3 offset3">
+                                            <div class="btn-group" data-toggle="buttons-checkbox" id="data_types">
+                                                <button type="button" class="btn">Particles</button>
+                                                <button type="button" class="btn">Temperature </button>
+                                                <button type="button" class="btn">Humidity</button>
+                                                <button type="button" class="btn">Co2</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div id="follow-up">
+                                            <br><br>
+                                            <div class="span4 offset1">
+                                                After receiving an alert, I want EASE to follow-up:
+                                            </div>
+                                            <div class="span2">
+                                                <select class="span2">
+                                                    <option selected="selected">Always</option>
+                                                    <option>Never</option>
+                                                    <option>Only for spikes</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="row">
+                                        <div class="span4 offset1">
+                                            I want to receive personalized suggestions:
+                                        </div>
+                                        <div class="span2">
+                                            <select class="span2" id="suggestions">
+                                                <option>Never</option>
+                                                <option selected="selected">Regularly</option>
+                                                <option>Only on weekends</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="row">
+                                        <div class="span4 offset1">
+                                            My preferred method of notifications is:
+                                        </div>
+                                        <div class="span2">
+                                            <select class="span2" id="alerts" name="alerts">
+                                            <option disabled="disabled">Select Method</option>
+                                              <option selected="selected">Texts</option>
+                                              <option>Email</option>
+                                              <option>Dashboard</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <br>
+
+                                <div class="modal-footer">
+                                    <a href="#step3" class="btn btn-large panel">Back</a>
+                                    <a href="index.html?status=first" class="btn btn-large btn-info">Submit</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+    <!-------------------------------------------------------------------------------->
+
+			    </div>
 			</div>
 		</div>
-	 </form>
+    </div>
+	</form>
 
-
-      <hr>
-
-      <footer>
+    <footer>
+        <hr>
         <p>&copy; Company 2013</p>
-      </footer>
+    </footer>
 
     </div> <!-- /container -->
 

@@ -33,7 +33,7 @@
 		}
 	</script>
 
-    
+
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -85,32 +85,42 @@
     <div class="container main-dashboard">
       <!-- Alert Center-->
       <div class="row">
-        <div class="span8">
+        <div class="span12">
 			<div class="alert alert-success hide" id="first_time">
 			  <button type="button" class="close" data-dismiss="alert">&times;</button>
-			  <h4>Saved!</h4>
-			  Thank you for setting up your preferences
+			  <h4>Device Activated!</h4>
+			  Thank you for setting up your account. EASE will begin sensing and helping you improve your air quality
 			</div>
-			
-			<div class="alert alert-success hide" id="action_taken">
+
+			<div class="alert alert-success hide" id="follow-up">
 			  <button type="button" class="close" data-dismiss="alert">&times;</button>
-			  <h4>Action Taken!</h4>
-			  We'll contact you in an hour to see how that worked out for you 
+			  <h4>Saved</h4>
+			  We'll contact you in an hour to see if the suggestion helped
 			</div>
+
+            <div class="alert alert-success hide" id="helped">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>Suggestion Saved</h4>
+              Glad to hear that helped, we'll remember it for next time
+            </div>
+
+            <div class="alert alert-warning hide" id="unhelped">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>Sorry to hear that</h4>
+              We'll provide a different suggestion for you next time
+            </div>
 		</div>
 	  </div>
 	<script>
 		$(function(){
 			var status = getUrlVars()["status"];
-			if (status == "saved") {
-				$("#first_time").show().delay(2000);
-			}
-			else if (status == "action_taken") {
-				$("#action_taken").show().delay(2000);
-			}; 
+			if (status == "first") { $("#first_time").show().delay(2000);}
+			else if (status == "follow-up") { $("#follow-up").show().delay(2000);}
+            else if (status == "helped") { $("#helped").show().delay(2000);}
+            else if (status == "unhelped") {$("#unhelped").show().delay(2000);};
 		});
-		
-	</script>	
+
+	</script>
 
 
       <!-- Dashboard-->
@@ -138,7 +148,6 @@
                 labelMinFontSize: 18,
                 labelFontColor: "#5a5a5a",
                 counter: true,
-
                 
               }); 
             </script></div>
@@ -217,17 +226,17 @@ document.body.appendChild(tt);
     $(tt).hide();
   }
 };
-      
+
       var myChart = new xChart('line-dotted', data, '#dash-chart', opts);
-      
+
     }());
     </script>
 
             </div>
           </div>
-          
-          
-          
+
+
+
         </div>
         <div class="span4">
           <h2>Recent Events</h2>
@@ -242,19 +251,19 @@ document.body.appendChild(tt);
           <div class="alert alert-error recent-event">
             <h4><i class="icon-warning-sign icon-2x pull-left"></i>Air Quality Spike</h4>
             <p>Your air quality has deteriorated rapidly in the past hour. Do you know what could have caused it?</p>
-                        <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
             <button type="button" class="improve" data-dismiss="alert">Take Action</button>
           </div>
           <div class="alert alert-success recent-event">
             <h4><i class="icon-heart icon-2x pull-left"></i>Goal Reached!</h4>
             <p>Congratulations! You reached your goal of maintaining CO<sub>2</sub> levels below 100ppm for one week!</p>
-                        <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
             <button type="button" class="improve" data-dismiss="alert">View Goals</button>
           </div>
           <div class="alert recent-event">
             <h4><i class="icon-pencil icon-2x pull-left"></i>Input Required</h4>
             <p>EASE needs feedback in order to make the best recommendations to improve your airquality. Please complete your air quality task on the improve page.</p>
-                        <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
             <button type="button" class="improve" data-dismiss="alert">Take Action</button>
           </div>
        </div>
@@ -262,8 +271,6 @@ document.body.appendChild(tt);
 
       <hr>
 
-      
-    
       <footer>
         <p>&copy; Company 2013</p>
       </footer>

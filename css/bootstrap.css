@@ -6196,6 +6196,11 @@ a.badge:focus {
   background: #eed3d7;
 }
 /* EXPLORE page */
+.events-counter {
+  float: right;
+  margin-top: 12px;
+  margin-right: 20px;
+}
 .explore-header h2 {
   float: left;
 }

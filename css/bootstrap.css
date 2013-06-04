@@ -6280,6 +6280,34 @@ a.badge:focus {
 .graph-details .summary-data:hover {
   background: rgba(81, 160, 201, 0.3);
 }
+.accordion-toggle {
+  color: #666;
+}
+.accordion-alert .accordion-heading {
+  border: 1px solid #b04557;
+  border-left: 5px solid #b04557;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.accordion-alert .accordion-inner {
+  border: 1px solid #b04557;
+  border-top: none;
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+.accordion-warning .accordion-heading {
+  border: 1px solid #e7a51d;
+  border-left: 5px solid #e7a51d;
+}
+.accordion-warning .accordion-inner {
+  border: 1px solid #e7a51d;
+  border-top: none;
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
 /* LOGIN page */
 .login-header {
   margin-top: 10%;

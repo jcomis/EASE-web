@@ -194,6 +194,20 @@
 .graph-details .summary-data:hover {
     background: rgba(81,160,201,.3);
 }
+.accordion-toggle { color: #666;}
+.accordion-alert .accordion-heading {
+  border: 1px solid darken(@errorBorder,40%);
+  border-left: 5px solid darken(@errorBorder,40%);
+   .border-radius(0);
+}
+.accordion-alert .accordion-inner {border: 1px solid darken(@errorBorder,40%);border-top: none; .box-shadow(inset 0px 1px 3px rgba(0,0,0,.25));}
+
+.accordion-warning .accordion-heading {
+  border: 1px solid darken(@warningBorder,40%);
+  border-left: 5px solid darken(@warningBorder,40%);
+}
+.accordion-warning .accordion-inner {border: 1px solid darken(@warningBorder,40%);border-top: none; .box-shadow(inset 0px 1px 3px rgba(0,0,0,.25));}
+
 
 /* LOGIN page */
 .login-header { margin-top:10%;}

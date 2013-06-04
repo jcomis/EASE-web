@@ -124,8 +124,8 @@
         <div class="span8">
           <div class="row">
             <h2>Current Air Quality</h2>
-            <div class="span4">
-              <div id="gauge" style="position: relative; height:190px; top:-30px;"></div>
+            <div class="span3">
+              <div id="gauge" style="position: relative; height:190px; top:-40px;"></div>
               <script>
                 var g = new JustGage({
                 id: "gauge",
@@ -147,8 +147,45 @@
 
               });
             </script></div>
-          <div class="span4">
-            <div class="trend-box">Trend? onec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</div>
+          <div class="span5">
+            <div class="trend-box">
+             <table class="table trend-table">
+                <tr>
+                  <td></td>
+                  <td>Current</td>
+                  <td>Average</td>
+                  <td>Trend</td>
+                </tr>
+
+                <tr>
+                  <td>Air Quality</td>
+                  <td>170</td>
+                  <td>152</td>
+                  <td><img src="img/sparkline1.png"></td>
+                </tr>
+                <tr>
+                  <td>CO<sub>2</sub></td>
+                  <td>145</td>
+                  <td>72</td>
+                  <td>-----</td>
+                </tr>
+                <tr>
+                  <td>Temp</td>
+                  <td>45</td>
+                  <td>52</td>
+                  <td>------</td>
+                </tr>
+                <tr>
+                  <td>Humidity</td>
+                  <td>37</td>
+                  <td>43</td>
+                  <td>------</td>
+                </tr>
+
+            </table>
+
+
+            </div>
           </div>
         </div>
         <h5>Todays Averages</h5>

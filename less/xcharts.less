@@ -63,7 +63,7 @@
 .colorX(@index) when (@index < @colorCount) {
   (~'.xchart .color@{index}') {
     @color: (~'@{color@{index}}');
-    @lightened: (~'@{lighten@{index}}');
+    @lightened: (~'@{color1}');
     @fade: (~'@{fade@{index}}');
     .line { stroke: @color; }
     rect,

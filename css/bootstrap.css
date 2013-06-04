@@ -6120,6 +6120,7 @@ a.badge:focus {
 .trend-table tr td {
   text-align: center;
   border: none;
+  vertical-align: center;
 }
 .trend-table tr td:first-child {
   text-align: right;

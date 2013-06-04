@@ -4,11 +4,47 @@
 		"selected_items":
 		[
 			[
-				"padding",
-				"padding-right"
+				"marg",
+				"margin-right"
+			],
+			[
+				"mat",
+				"margin-left"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"pad",
+				"padding-top"
 			],
 			[
 				"margin",
+				"margin-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"margin-",
 				"margin-top"
 			],
 			[
@@ -32,24 +68,8 @@
 				"text-indent"
 			],
 			[
-				"pad",
-				"padding-left"
-			],
-			[
-				"margin-",
-				"margin-right"
-			],
-			[
 				"pa",
 				"padding-right"
-			],
-			[
-				"padd",
-				"padding-right"
-			],
-			[
-				"bor",
-				"border-bottom"
 			],
 			[
 				"borde",
@@ -367,15 +387,55 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6727,
+				"buffer_size": 10126,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "alert-yes.html",
+			"file": "less/custom.less",
 			"settings":
 			{
-				"buffer_size": 2971,
+				"buffer_size": 5177,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "explore.html",
+			"settings":
+			{
+				"buffer_size": 19211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/variables.less",
+			"settings":
+			{
+				"buffer_size": 9254,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/dropdowns.less",
+			"settings":
+			{
+				"buffer_size": 5493,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/navbar.less",
+			"settings":
+			{
+				"buffer_size": 12006,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "setup.html",
+			"settings":
+			{
+				"buffer_size": 13576,
 				"line_ending": "Unix"
 			}
 		}
@@ -416,6 +476,7 @@
 	},
 	"file_history":
 	[
+		"/Users/jared/EASE-web/alert-yes.html",
 		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/responsive-768px-979px.less",
 		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/navbar-backup.less",
 		"/Users/jared/Documents/Dropbox/Commonshare/dadweb/less/mixins.less",
@@ -477,6 +538,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"HEAD",
+			"box-s",
+			"Collapsible Group Item #",
+			"clear",
 			"../assets/",
 			"20px",
 			"fixed-top",
@@ -553,6 +618,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Month Day, Year",
 			"",
 			"</li>",
 			"<li>",
@@ -576,7 +642,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -584,7 +650,7 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 6727,
+						"buffer_size": 10126,
 						"regions":
 						{
 						},
@@ -603,25 +669,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "alert-yes.html",
+					"file": "less/custom.less",
 					"settings":
 					{
-						"buffer_size": 2971,
+						"buffer_size": 5177,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1107,
-								1107
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1762.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "explore.html",
+					"settings":
+					{
+						"buffer_size": 19211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -631,7 +725,115 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 157.0,
+						"translation.y": 862.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "less/variables.less",
+					"settings":
+					{
+						"buffer_size": 9254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 251.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "less/dropdowns.less",
+					"settings":
+					{
+						"buffer_size": 5493,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1277,
+								1282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 371.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "less/navbar.less",
+					"settings":
+					{
+						"buffer_size": 12006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6045,
+								6050
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3324.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "setup.html",
+					"settings":
+					{
+						"buffer_size": 13576,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3616.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -6203,6 +6203,9 @@ a.badge:focus {
   background: #eed3d7;
 }
 /* EXPLORE page */
+#selection2 {
+  display: none;
+}
 .events-counter {
   float: right;
   margin-top: 12px;

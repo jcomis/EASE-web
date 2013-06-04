@@ -170,6 +170,7 @@ document.body.appendChild(tt1);
       var opts = {
   "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
   "tickFormatX": function (x) { return d3.time.format('%b %e')(x); },
+  "click": function (d,i) { $('#selection1').fadeToggle(); $('#selection2').fadeToggle();},
   "mouseover": function (d, i) {
     var pos = $(this).offset();
     $(tt1).text(d3.time.format('%b %e')(d.x) + ': ' + d.y)
@@ -386,6 +387,7 @@ document.body.appendChild(tt1);
 
         </div>
         <div class="span4 selection-details clearfix">
+          <div id="selection1">
           <h3>Selection Details</h3>
           <div class="graph-selected">
             <h4>May 20, 2013</h4>
@@ -440,7 +442,12 @@ document.body.appendChild(tt1);
 
 
           </div>
-          <div class="graph-details">
+        </div>
+        <div id="selection2">
+          <h3>blah</h3>
+        </div>
+
+          <!--<div class="graph-details">
           <div class="summary-data">
             <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
             <p class="pull-right">Events <span class="badge">2</span></p>
@@ -493,7 +500,7 @@ document.body.appendChild(tt1);
             <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
             <p class="pull-right">Events <span class="badge">2</span></p>
           </div>
-          </div>
+          </div>-->
         </div>
 
       </div>

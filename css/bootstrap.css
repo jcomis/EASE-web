@@ -6282,7 +6282,7 @@ a.badge:focus {
   margin-top: 10%;
 }
 #login {
-  padding: 15px 5px 15px 5px;
+  padding: 15px 10px 15px 10px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 4px;
@@ -6292,14 +6292,6 @@ a.badge:focus {
 #login h2 {
   text-align: center;
   margin-bottom: 25px;
-}
-#login .control-label {
-  width: 90px;
-  font-weight: bold;
-  text-align: right;
-}
-#login .control-group .controls {
-  margin-left: 110px;
 }
 .login-buttons {
   width: 60%;

@@ -980,16 +980,8 @@
   .carousel-caption {
     position: static;
   }
-  #login form {
-    padding: inherit 20px;
-  }
-  #login .control-label {
-    width: auto;
-    margin-left: 10px;
-    text-align: left;
-  }
-  #login .control-group .controls {
-    margin-left: 0px;
+  .login-buttons {
+    width: 100%;
   }
 }
 @media (max-width: 979px) {

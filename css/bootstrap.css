@@ -6045,27 +6045,18 @@ a.badge:focus {
   left: -30px;
   position: relative;
 }
-.air-qual-value {
-  font-size: 30px;
-  left: 45%;
+.dial-label {
   position: relative;
-  top: -35px;
+  top: -60px;
+  width: 80px;
+  left: 50%;
+  margin-left: -40px;
 }
-.air-qual-gradient {
-  width: 90%;
-  height: 25px;
-  border-radius: 2px;
-  float: right;
-  margin-right: 15px;
-  padding-left: 5%;
-  background-color: #D82F2F;
-  background: -webkit-gradient(linear, left center, right center, from(#37b726), to(#d82f2f), color-stop(0.5, #eae844));
-  background: -moz-linear-gradient(left, #37b726 0%, #eae844 50%, #d82f2f 100%);
-}
-.air-qual-gradient i {
-  position: relative;
-  display: block;
-  top: -35px;
+.dial-label .label {
+  font-size: 20px;
+  padding: 6px 0px;
+  width: 100%;
+  text-align: center;
 }
 .current-averages {
   margin: inherit 10px 15px 10px;

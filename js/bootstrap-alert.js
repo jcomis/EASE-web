@@ -57,6 +57,14 @@
       $parent
         .trigger('closed')
         .slideUp()
+        //$('#tip1').slideDown();
+        if($('#tip1').is(':visible')) {
+          if($('#tip2').is(':visible')) { 
+            if($('#tip3').is(':visible')) {
+              $('#tip4').slideDown();
+            } else {$('#tip3').slideDown();}
+          } else {$('#tip2').slideDown();}
+        } else { $('#tip1').slideDown();}
     }
 
     $.support.transition && $parent.hasClass('fade') ?

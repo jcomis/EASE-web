@@ -95,7 +95,7 @@ body{
   .close { font-size: 30px;}
 }
 
-
+#tip1,#tip2, #tip3, #tip4 { display: none;}
 .recent-event {
     padding: 6px 0px 0px 0px;
   //  border: 1px solid rgba(0,0,0,.2);
@@ -141,9 +141,11 @@ body{
 .alert-success .improve { .improve-mixin(darken(@successBorder,40%)); }
 .alert-error .dismiss { .dismiss-mixin(darken(@errorBorder,40%));}
 .alert-error .improve { .improve-mixin(darken(@errorBorder,40%)); }
+.alert-info .dismiss { .dismiss-mixin(darken(@infoBorder,30%));}
+.alert-info .improve { .improve-mixin(darken(@infoBorder,30%)); }
 
 .dismiss-mixin (@bordercolor) { border: 0; border-right: 1px solid @bordercolor; border-top: 1px solid @bordercolor; background: lighten(@bordercolor, 40%);}
-.improve-mixin (@bordercolor) { border: 0; border-top: 1px solid @bordercolor; border-right: 1px solid @bordercolor; background: lighten(@bordercolor, 40%);}
+.improve-mixin (@bordercolor) { border: 0; border-top: 1px solid @bordercolor;  background: lighten(@bordercolor, 40%);}
 /* EXPLORE page */
 #selection2 { display: none;}
 .events-counter { float: right; margin-top: 12px;margin-right:20px;}

@@ -215,6 +215,7 @@ document.body.appendChild(tt1);
       var opts = {
   "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
   "tickFormatX": function (x) { return d3.time.format('%b %e')(x); },
+  "click": function (d,i) { $('#selection1').fadeToggle(50); $('#selection2').delay(100).fadeToggle(50);},
   "mouseover": function (d, i) {
     var pos = $(this).offset();
     $(tt1).text(d3.time.format('%b %e')(d.x) + ': ' + d.y)
@@ -318,6 +319,7 @@ document.body.appendChild(tt1);
       var opts = {
   "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
   "tickFormatX": function (x) { return d3.time.format('%b %e')(x); },
+  "click": function (d,i) { $('#selection1').fadeToggle(50); $('#selection2').delay(100).fadeToggle(50);},
   "mouseover": function (d, i) {
     var pos = $(this).offset();
     $(tt1).text(d3.time.format('%b %e')(d.x) + ': ' + d.y+'ppm')
@@ -421,6 +423,7 @@ document.body.appendChild(tt1);
       var opts = {
   "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
   "tickFormatX": function (x) { return d3.time.format('%b %e')(x); },
+  "click": function (d,i) { $('#selection1').fadeToggle(50); $('#selection2').delay(100).fadeToggle(50);},
   "mouseover": function (d, i) {
     var pos = $(this).offset();
     $(tt1).text(d3.time.format('%b %e')(d.x) + ': ' + d.y + '°F')
@@ -524,6 +527,7 @@ document.body.appendChild(tt1);
       var opts = {
   "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
   "tickFormatX": function (x) { return d3.time.format('%b %e')(x); },
+  "click": function (d,i) { $('#selection1').fadeToggle(50); $('#selection2').delay(100).fadeToggle(50);},
   "mouseover": function (d, i) {
     var pos = $(this).offset();
     $(tt1).text(d3.time.format('%b %e')(d.x) + ': ' + d.y + '%')
@@ -543,6 +547,7 @@ document.body.appendChild(tt1);
         </div>
         <div class="span4 selection-details clearfix">
           <h3>Selection Details</h3>
+          <div id="selection1">
           <div class="graph-selected">
             <h4>May 20, 2013</h4>
             <h5>Averages</h5>
@@ -585,7 +590,7 @@ document.body.appendChild(tt1);
 
 
           </div>
-                    <div class="graph-selected">
+          <div class="graph-selected">
             <h4>May 20, 2012</h4>
             <h5>Averages</h5>
             <div class="well current-data">
@@ -638,6 +643,104 @@ document.body.appendChild(tt1);
 
 
           </div>
+        </div>
+          <div id="selection2">
+          <div class="graph-selected">
+            <h4>May 22, 2013</h4>
+            <h5>Averages</h5>
+            <div class="well current-data">
+              <div class="now-data air-quality">Air Qual<span class="average"><strong>105</strong></span></div>
+              <div class="now-data temp">Temp<span class="average"><strong>72°F</strong></span></div>
+              <div class="now-data humidity">Humidity<span class="average"><strong>15%</strong></span></div>
+              <div class="now-data co2">CO<sup>2</sup><span class="average"><strong>445</strong></span></div>
+            </div>
+            <h5>Events</h5>
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group accordion-alert">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      Dangerous CO<sub>2</sub> Levels
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-warning">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      Air Filter Change Reminder
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+          </div>
+          <div class="graph-selected">
+            <h4>May 22, 2012</h4>
+            <h5>Averages</h5>
+            <div class="well current-data">
+              <div class="now-data air-quality">Air Qual<span class="average"><strong>432</strong></span></div>
+              <div class="now-data temp">Temp<span class="average"><strong>57°F</strong></span></div>
+              <div class="now-data humidity">Humidity<span class="average"><strong>45%</strong></span></div>
+              <div class="now-data co2">CO<sup>2</sup><span class="average"><strong>145</strong></span></div>
+            </div>
+            <h5>Events</h5>
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group accordion-alert">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      Air Quality Spike
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-warning">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      Feedback Required
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-alert">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                      Air Quality Spike
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+          </div>
+        </div>
         </div>
 
       </div>

@@ -29,7 +29,7 @@
   fill: #3880aa;
 }
 .xchart .color0 .fill {
-  fill: rgba(56, 128, 170, 0.1);
+  display: none;
 }
 .xchart .color0.comp .line {
   stroke: #4da944;
@@ -52,7 +52,7 @@
   fill: #4da944;
 }
 .xchart .color1 .fill {
-  fill: rgba(77, 169, 68, 0.1);
+  display: none;
 }
 .xchart .color1.comp .line {
   stroke: #4da944;
@@ -75,7 +75,7 @@
   fill: #f26522;
 }
 .xchart .color2 .fill {
-  fill: rgba(242, 101, 34, 0.1);
+  display: none;
 }
 .xchart .color2.comp .line {
   stroke: #4da944;
@@ -98,7 +98,7 @@
   fill: #c6080d;
 }
 .xchart .color3 .fill {
-  fill: rgba(198, 8, 13, 0.1);
+  display: none;
 }
 .xchart .color3.comp .line {
   stroke: #4da944;
@@ -121,7 +121,7 @@
   fill: #672d8b;
 }
 .xchart .color4 .fill {
-  fill: rgba(103, 45, 139, 0.1);
+  display: none;
 }
 .xchart .color4.comp .line {
   stroke: #4da944;
@@ -144,7 +144,7 @@
   fill: #ce1797;
 }
 .xchart .color5 .fill {
-  fill: rgba(206, 23, 151, 0.1);
+  display: none;
 }
 .xchart .color5.comp .line {
   stroke: #4da944;
@@ -167,7 +167,7 @@
   fill: #d9ce00;
 }
 .xchart .color6 .fill {
-  fill: rgba(217, 206, 0, 0.1);
+  display: none;
 }
 .xchart .color6.comp .line {
   stroke: #4da944;
@@ -190,7 +190,7 @@
   fill: #754c24;
 }
 .xchart .color7 .fill {
-  fill: rgba(117, 76, 36, 0.1);
+  display: none;
 }
 .xchart .color7.comp .line {
   stroke: #4da944;
@@ -213,7 +213,7 @@
   fill: #2eb9b4;
 }
 .xchart .color8 .fill {
-  fill: rgba(46, 185, 180, 0.1);
+  display: none;
 }
 .xchart .color8.comp .line {
   stroke: #4da944;
@@ -236,7 +236,7 @@
   fill: #0e2e42;
 }
 .xchart .color9 .fill {
-  fill: rgba(14, 46, 66, 0.1);
+  display: none;
 }
 .xchart .color9.comp .line {
   stroke: #4da944;

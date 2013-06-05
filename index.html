@@ -250,7 +250,7 @@ document.body.appendChild(tt);
   "tickFormatX": function (x) { return d3.time.format('%I%p')(x); },
   "mouseover": function (d, i) {
     var pos = $(this).offset();
-    $(tt).text(d3.time.format('%A')(d.x) + ': ' + d.y)
+    $(tt).text(d3.time.format('%a %I:%M%p')(d.x) + ': ' + d.y)
       .css({top: 10 + pos.top, left: 20 + pos.left, position: 'absolute'})
       .show();
   },

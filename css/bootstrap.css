@@ -6410,16 +6410,21 @@ a.badge:focus {
   background-color: #dff0d8;
   border-bottom: 0;
 }
-#improved .accordion-group {
-  border-color: #d6e9c6;
-}
 #improved .heading .accordion-toggle {
   display: block;
   padding: 8px 15px;
   color: #468847;
+  border-left: 5px solid #468847;
 }
 #improved h4 {
   color: #468847;
+}
+#improved .accordion-group {
+  margin-bottom: 10px;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 #worsened .heading {
   background-color: #f2dede;
@@ -6429,30 +6434,40 @@ a.badge:focus {
   display: block;
   padding: 8px 15px;
   color: #b94a48;
+  border-left: 5px solid #b94a48;
 }
 #worsened .accordion-group {
-  border-color: #eed3d7;
+  margin-bottom: 10px;
+  border: 1px solid #eed3d7;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 #worsened h4 {
   color: #b94a48;
 }
 #uncategorized .heading {
-  background-color: #F0F0F0;
-  border-color: #808080;
+  background-color: #f8f8f8;
+  border-color: #fbeed5;
   border-bottom: 0;
 }
 #uncategorized .accordion-group {
-  border-color: #D0D0D0;
+  margin-bottom: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 #uncategorized .heading .accordion-toggle {
   display: block;
   padding: 8px 15px;
+  color: #888;
+  border-left: 5px solid #f1ca79;
 }
 #uncategorized .heading a:hover {
-  color: #666;
+  color: #888;
 }
 #uncategorized h4 {
-  color: #666;
+  color: #c09853;
 }
 .bad_highlight {
   color: red;

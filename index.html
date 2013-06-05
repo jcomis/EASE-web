@@ -123,8 +123,9 @@
       <div class="row">
         <div class="span8">
           <div class="row">
-            <h2>Current Air Quality</h2>
+            <h2>Current Readings</h2>
             <div class="span3">
+              <h4 class="heading-center">Air Quality</h4>
               <div id="gauge" style="position: relative; height:190px; top:-40px;"></div>
               <script>
                 var g = new JustGage({
@@ -149,55 +150,34 @@
             </script>
             <div class="dial-label"><span class="label label-success">Good</span></div>
           </div>
-          <div class="span5">
-            <div class="trend-box">
-             <table class="table trend-table">
-                <tr>
-                  <td></td>
-                  <td>Current</td>
-                  <td>Average</td>
-                  <td>Trend</td>
-                </tr>
-
-                <tr>
-                  <td>Air Quality</td>
-                  <td>170</td>
-                  <td>152</td>
-                  <td></td>
-                </tr>
+          <div class="span3">
+            <table class="table trend-table">
+              <tbody>
                 <tr>
                   <td>CO<sub>2</sub></td>
-                  <td>145</td>
-                  <td>72</td>
-                  <td>-----</td>
+                  <td><div class="sensor-value">222ppm</div></td>
                 </tr>
                 <tr>
-                  <td>Temp</td>
-                  <td>45</td>
-                  <td>52</td>
-                  <td>------</td>
+                  <td>Temperature</td>
+                  <td><div class="sensor-value">65°F</div></td>
                 </tr>
                 <tr>
                   <td>Humidity</td>
-                  <td>37</td>
-                  <td>43</td>
-                  <td>------</td>
+                  <td><div class="sensor-value">55%</div></td>
                 </tr>
-
+              </tbody>
             </table>
-
-
-            </div>
           </div>
         </div>
-        <!--
+        <div class="move-up">
+        <hr>
         <h5>Todays Averages</h5>
           <div class="well current-averages">
             <div class="now-data air-quality">Air Qual<span class="average"><strong>345</strong></span></div>
               <div class="now-data temp">Temp<span class="average"><strong>45°F</strong></span></div>
               <div class="now-data humidity">Humidity<span class="average"><strong>45%</strong></span></div>
               <div class="now-data co2">CO<sub>2</sub><span class="average"><strong>145</strong></span></div>
-          </div>-->
+          </div>
           <div class="today-graph">
             <h3>24H Air Quality <small><em>as of 10:32pm 5/20/2013</em></small></h3>
             <div class="graph">
@@ -219,23 +199,23 @@ document.body.appendChild(tt);
       "data": [
       {
           "x": "2012-11-04T16:47",
-          "y": 17
+          "y": 147
         },
         {
           "x": "2012-11-04T18:47",
-          "y": 17
+          "y": 107
         },
         {
           "x": "2012-11-04T22:01",
-          "y": 19
+          "y": 89
         },
         {
           "x": "2012-11-05T00:31",
-          "y": 23
+          "y": 83
         },
         {
           "x": "2012-11-05T03:42",
-          "y": 32
+          "y": 72
         },
         {
           "x": "2012-11-05T05:01",
@@ -243,19 +223,19 @@ document.body.appendChild(tt);
         },
         {
           "x": "2012-11-05T10:55",
-          "y": 12
+          "y": 192
         },
         {
           "x": "2012-11-05T13:12",
-          "y": 14
+          "y": 110
         },
         {
           "x": "2012-11-05T15:40",
-          "y": 23
+          "y": 230
         },
         {
           "x": "2012-11-05T19:00",
-          "y": 40
+          "y": 240
         }
       ]
     }
@@ -281,13 +261,11 @@ document.body.appendChild(tt);
     </script>
 
             </div>
-          </div>
-
-
-
+          </div>  
         </div>
+</div>
         <div class="span4">
-          <h2>Recent Events <span class="badge events-counter">4</span></h2>
+          <h2>Recent Events</h2>
           <div class="alert recent-event">
 
             <h4><i class="icon-info-sign icon-2x pull-left"></i>Warning: High Humiditiy Levels</h4>

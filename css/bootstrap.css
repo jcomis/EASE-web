@@ -6063,7 +6063,7 @@ a.badge:focus {
   padding-top: 3px;
   padding-bottom: 23px;
 }
-.well .now-data {
+.now-data {
   text-align: center;
   position: relative;
   width: 24.5%;
@@ -6074,6 +6074,9 @@ a.badge:focus {
   -webkit-box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
   -moz-box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
   box-shadow: inset -1px 0px 1px rgba(255, 255, 255, 0.95);
+}
+.current-values .now-data {
+  width: 33%;
 }
 .now-data:last-child {
   border-right: none;
@@ -6095,18 +6098,43 @@ a.badge:focus {
 .average {
   display: block;
 }
+.heading-center {
+  text-align: center;
+}
+.value-listing h3 {
+  float: left;
+}
+.value-listing {
+  *zoom: 1;
+  clear: both;
+  margin-bottom: 25px;
+  width: 100%;
+  display: block;
+}
+.value-listing:before,
+.value-listing:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.value-listing:after {
+  clear: both;
+}
+.metric {
+  font-size: 24.5px;
+  float: left;
+  text-align: right;
+}
+.avg {
+  color: #555555;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 20px;
+  top: -2px;
+}
 .trend-table {
   position: relative;
   width: 100%;
-  -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border: 1px solid #e3e3e3;
-  background-color: #f5f5f5;
-}
-.trend-table tr:first-child td {
-  border: none;
-  font-weight: bold;
 }
 .trend-table tr td {
   text-align: center;
@@ -6116,9 +6144,45 @@ a.badge:focus {
 .trend-table tr td:first-child {
   text-align: right;
   font-weight: bold;
+  vertical-align: middle;
+}
+.trend-table tr {
+  height: 70px;
+}
+.sensor-value {
+  padding: 15px;
+  width: 80%;
+  background-color: #f5f5f5;
+  font-size: 26px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 2px solid #e3e3e3;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.regional {
+  padding: 15px;
+  width: 80%;
+  background-color: #f5f5f5;
+  font-size: 26px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 2px solid #e3e3e3;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .graph {
   height: 300px;
+}
+.move-up {
+  position: relative;
+  top: -40px;
 }
 #action_taken .close {
   font-size: 30px;

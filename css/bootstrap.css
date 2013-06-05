@@ -6241,6 +6241,7 @@ a.badge:focus {
 .explore-graph {
   margin-top: 10px;
   clear: both;
+  position: relative;
 }
 .ex-tooltip {
   display: none;
@@ -6253,10 +6254,26 @@ a.badge:focus {
   padding: 3px;
   color: rgba(255, 255, 255, 0.9);
 }
+.chart-container figure {
+  margin: 0;
+  margin-left: -25px;
+}
 .chart-container h4 {
-  padding-top: -5px;
-  margin-left: 20px;
-  margin-bottom: -10px;
+  position: relative;
+  left: 40px;
+  top: 15px;
+}
+.chart-container:nth-child(2) {
+  position: relative;
+  top: -25px;
+}
+.chart-container:nth-child(3) {
+  position: relative;
+  top: -50px;
+}
+.chart-container:nth-child(4) {
+  position: relative;
+  top: -75px;
 }
 .graph-details {
   position: relative;

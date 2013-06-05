@@ -56,7 +56,7 @@
     function removeElement() {
       $parent
         .trigger('closed')
-        .remove()
+        .slideUp()
     }
 
     $.support.transition && $parent.hasClass('fade') ?

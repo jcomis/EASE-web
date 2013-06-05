@@ -39,7 +39,8 @@
   .navbar .brand {
     padding-left: 10px;
     padding-right: 10px;
-    margin: 0 0 0 -5px;
+
+    margin: 0 0 0 15px;
   }
 
   // COLLAPSIBLE NAVBAR
@@ -51,13 +52,35 @@
   // Block-level the nav
   .nav-collapse .nav {
     float: none;
-    margin: 0 0 (@baseLineHeight / 2);
+    //margin: 10px 0 (@baseLineHeight / 2);
+    margin: 0;
+    background-color: darken(@navbarBackground,1%);
+    width: 101%;
   }
-  .nav-collapse .nav > li {
+   .nav-collapse .nav > li {
+    font-size: 18px;
     float: none;
+    line-height: 28px;
+  }
+  .nav-collapse .nav > li:first-child {
+    .box-shadow(inset 0 1px 3px rgba(0,0,0,.25));
+  }
+  .nav-collapse .nav >li:last-child {
+    .box-shadow(inset 0 -1px 1px rgba(255,255,255,.15));
+   //border-bottom: 1px solid darken(@navbarBackground,40%);
   }
   .nav-collapse .nav > li > a {
-    margin-bottom: 2px;
+    //margin-bottom: 0px;
+    //border-top: 1px solid red;
+      //padding: 10px 0px;
+     border-top: 1px solid darken(@navbarBackground,20%);
+   // .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1)");
+  }
+    .nav-collapse .nav > .active > a {
+    // border-top: 1px solid darken(@navbarBackground,20%);
+     background-color: lighten(@navbarBackground,5%);
+     .box-shadow(~"inset 0 2px 4px rgba(0,0,0,.12),inset 0 -2px 4px rgba(0,0,0,.12)");
+     //background-color: red;
   }
   .nav-collapse .nav > .divider-vertical {
     display: none;
@@ -72,13 +95,14 @@
     padding: 9px 15px;
     font-weight: bold;
     color: @navbarLinkColor;
-    .border-radius(3px);
+    //.border-radius(3px);
   }
   // Buttons
   .nav-collapse .btn {
     padding: 4px 10px 4px;
     font-weight: normal;
-    .border-radius(@baseBorderRadius);
+    .border-top-left-radius(@baseBorderRadius);
+    .border-bottom-left-radius(@baseBorderRadius);
   }
   .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px;

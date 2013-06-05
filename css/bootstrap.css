@@ -4500,9 +4500,7 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
 }
 .navbar-inner {
-  min-height: 80px;
-  padding-left: 20px;
-  padding-right: 20px;
+  min-height: 60px;
   border: 1px solid #d4d4d4;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
@@ -4528,8 +4526,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 30px 20px 30px;
-  margin-left: -20px;
+  padding: 20px 20px 20px;
+  margin-left: 20px;
   font-size: 20px;
   font-weight: 200;
   color: #777777;
@@ -4541,7 +4539,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-text {
   margin-bottom: 0;
-  line-height: 80px;
+  line-height: 60px;
   color: #777777;
 }
 .navbar-link {
@@ -4552,14 +4550,10 @@ input[type="submit"].btn.btn-mini {
   color: #333333;
 }
 .navbar .divider-vertical {
-  height: 80px;
+  height: 60px;
   margin: 0 9px;
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #ffffff;
-}
-.navbar .btn,
-.navbar .btn-group {
-  margin-top: 25px;
 }
 .navbar .btn-group .btn,
 .navbar .input-prepend .btn,
@@ -4585,7 +4579,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .navbar-form input,
 .navbar-form select,
@@ -4610,7 +4604,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search {
   position: relative;
   float: left;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 .navbar-search .search-query {
@@ -4694,7 +4688,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 30px 25px 30px;
+  padding: 20px 25px 20px;
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
@@ -4721,9 +4715,10 @@ input[type="submit"].btn.btn-mini {
 .navbar .btn-navbar {
   display: none;
   float: right;
-  padding: 7px 10px;
+  padding: 10px 10px;
   margin-left: 5px;
-  margin-right: 5px;
+  height: 60px;
+  width: 60px;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #ededed;
@@ -4760,8 +4755,9 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .btn-navbar .icon-bar {
   display: block;
-  width: 18px;
+  width: 24px;
   height: 2px;
+  margin: 0 auto;
   background-color: #f5f5f5;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
@@ -4771,7 +4767,7 @@ input[type="submit"].btn.btn-mini {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 .btn-navbar .icon-bar + .icon-bar {
-  margin-top: 3px;
+  margin-top: 5px;
 }
 .navbar .nav > li > .dropdown-menu:before {
   content: '';

@@ -20,8 +20,8 @@
 // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
 .navbar-inner {
   min-height: @navbarHeight;
-  padding-left:  20px;
-  padding-right: 20px;
+//  padding-left:  20px;
+//  padding-right: 20px;
   //#gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
   border: 1px solid @navbarBorder;
   //.border-radius(@baseBorderRadius);
@@ -51,7 +51,7 @@
   display: block;
   // Vertically center the text given @navbarHeight
   padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
-  margin-left: -20px; // negative indent to left-align the text down the page
+  margin-left: 20px; // negative indent to left-align the text down the page
   font-size: 20px;
   font-weight: 200;
   color: @navbarBrandColor;
@@ -93,7 +93,7 @@
 // -------------------------
 .navbar .btn,
 .navbar .btn-group {
-  .navbarVerticalAlign(30px); // Vertically center in navbar
+ // .navbarVerticalAlign(30px); // Vertically center in navbar
 }
 .navbar .btn-group .btn,
 .navbar .input-prepend .btn,
@@ -274,22 +274,26 @@
 .navbar .btn-navbar {
   display: none;
   float: right;
-  padding: 7px 10px;
+  padding: 10px 10px;
   margin-left: 5px;
-  margin-right: 5px;
+  height: @navbarHeight;
+  width: @navbarHeight;
+ // margin-right: 5px;
   .buttonBackground(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
+
   .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075)");
 }
 .navbar .btn-navbar .icon-bar {
   display: block;
-  width: 18px;
+  width: 24px;
   height: 2px;
+  margin: 0 auto;
   background-color: #f5f5f5;
   .border-radius(1px);
   .box-shadow(0 1px 0 rgba(0,0,0,.25));
 }
 .btn-navbar .icon-bar + .icon-bar {
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 

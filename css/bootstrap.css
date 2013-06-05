@@ -6326,6 +6326,7 @@ a.badge:focus {
   position: relative;
   left: 40px;
   top: 15px;
+  width: 150px;
 }
 .chart-container:nth-child(2) {
   position: relative;

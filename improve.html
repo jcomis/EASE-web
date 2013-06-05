@@ -84,20 +84,6 @@
         <div class="span2">
             <h2>Improve</h2>
         </div>
-        <div class="span10">
-
-            <div class="row box">
-                <div class="span2"><b>Room:</b> Bedroom</div>
-                <div class="span2"><b>Pets:</b> None</div>
-                <div class="span2"><b>Air Purifier:</b> Yes</div>
-                <div class="span2"><b>Floor: </b>Carpet</div>
-                <div class="span1"><b>HVAC: </b>Cool</div>
-                <div class="span1"><a href="" style="float:right;padding-right:30px;">Edit</a></div>
-            </div>
-
-            <br>
-
-        </div>
 
       </div>
 
@@ -231,72 +217,7 @@
 
             </div>
 
-        <div class="span6">
-          <div id="alert_settings">
-            <h4>Alert Settings</h4>
 
-            I want to receive an alert when:
-            <select class="span3" id="notify_when">
-                <option>Never</option>
-                <option selected="selected">When the device detects a spike</option>
-                <option>When the device detects a spike or drop</option>
-            </select>
-
-              <script>
-                $('#notify_when').change(function(){
-                  if($('#notify_when').val() == 'Never'){
-                      $('#data_types').fadeOut();
-                      $('#follow-up').fadeOut();
-                  }
-                  else {
-                      $('#data_types').fadeIn();
-                      $('#follow-up').fadeIn();
-                  };
-                });
-              </script>
-
-            <div class="btn-group" data-toggle="buttons-checkbox" id="data_types">
-              <button type="button" class="btn">Particles</button>
-              <button type="button" class="btn">Temperature </button>
-              <button type="button" class="btn">Humidity</button>
-              <button type="button" class="btn">Co2</button>
-            </div>
-
-            <br>   <br><br>
-
-            <div id="follow-up">
-                After receiving an alert, I want to get a follow-up alert:
-                <select class="span2">
-                    <option>Never</option>
-                    <option>Only for spikes</option>
-                    <option selected="selected">Always</option>
-                </select>
-             </div>
-
-            <br>
-
-            I want to receive personalized suggestions:
-            <select class="span2" id="suggestions">
-                <option>Never</option>
-                <option>Regularly</option>
-                <option>Only on weekends</option>
-            </select>
-            <br><br>
-
-              My preferred method of notifications is:
-              <select class="span2" id="alerts" name="alerts">
-                <option disabled="disabled">Select Method</option>
-                  <option selected="selected">SMS</option>
-                  <option>Email</option>
-                  <option>Dashboard</option>
-              </select>
-
-              <br><br>
-              <a href="#" class="btn btn-info" id="cause-save">Save</a>
-              <a href="index.html" class="btn">Reset</a>
-          </div>
-
-        </div>
 
       </div>
 

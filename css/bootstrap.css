@@ -6325,13 +6325,12 @@ a.badge:focus {
   margin-bottom: 25px;
 }
 .login-buttons {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 .login-buttons p {
   text-align: center;
   margin: 10px 5px;
-  font-weight: bold;
 }
 /* SETUP page */
 .setup_step {
@@ -6429,10 +6428,6 @@ a.badge:focus {
 }
 .box div {
   font-size: 12px;
-}
-#alert_settings {
-  padding-left: 30px;
-  border-left: 1px solid #999;
 }
 .pull-right {
   float: right;

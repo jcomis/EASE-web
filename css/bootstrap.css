@@ -6391,8 +6391,10 @@ a.badge:focus {
 /* improve page */
 #improved .heading {
   background-color: #dff0d8;
-  border-color: #d6e9c6;
   border-bottom: 0;
+}
+#improved .accordion-group {
+  border-color: #d6e9c6;
 }
 #improved .heading .accordion-toggle {
   display: block;
@@ -6404,7 +6406,6 @@ a.badge:focus {
 }
 #worsened .heading {
   background-color: #f2dede;
-  border-color: #eed3d7;
   border-bottom: 0;
 }
 #worsened .heading .accordion-toggle {
@@ -6412,8 +6413,35 @@ a.badge:focus {
   padding: 8px 15px;
   color: #b94a48;
 }
+#worsened .accordion-group {
+  border-color: #eed3d7;
+}
 #worsened h4 {
   color: #b94a48;
+}
+#uncategorized .heading {
+  background-color: #F0F0F0;
+  border-color: #808080;
+  border-bottom: 0;
+}
+#uncategorized .accordion-group {
+  border-color: #D0D0D0;
+}
+#uncategorized .heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px;
+}
+#uncategorized .heading a:hover {
+  color: #666;
+}
+#uncategorized h4 {
+  color: #666;
+}
+.bad_highlight {
+  color: red;
+}
+.good_highlight {
+  color: green;
 }
 .box {
   margin-top: 10px;

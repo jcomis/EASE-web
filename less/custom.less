@@ -296,9 +296,13 @@
 
 #improved .heading {
   background-color: @successBackground;
-  border-color: @successBorder;
   border-bottom: 0;
 }
+
+#improved .accordion-group {
+    border-color: @successBorder;
+}
+
 #improved .heading .accordion-toggle {
   display: block;
   padding: 8px 15px;
@@ -311,7 +315,6 @@
 
 #worsened .heading {
   background-color: @errorBackground;
-  border-color: @errorBorder;
   border-bottom: 0;
 }
 #worsened .heading .accordion-toggle {
@@ -320,9 +323,43 @@
   color: @errorText;
 }
 
+#worsened .accordion-group {
+    border-color: @errorBorder;
+}
+
 #worsened h4 {
   color: @errorText;
 }
+
+#uncategorized .heading {
+  background-color: #F0F0F0;
+  border-color: #808080;
+  border-bottom: 0;
+}
+
+#uncategorized .accordion-group {
+  border-color: #D0D0D0;
+}
+
+#uncategorized .heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px;
+}
+
+#uncategorized .heading a:hover{
+  color: #666;}
+
+#uncategorized h4{
+  color: #666;}
+
+.bad_highlight {
+  color:red;
+}
+
+.good_highlight {
+  color:green;
+}
+
 
 .box
 {

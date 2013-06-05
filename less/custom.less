@@ -99,7 +99,7 @@
        //   border: 0;
           float:left;
           -webkit-appearance: none;
- 
+
           padding: 12px 0px 12px 0px;
       //  border-left: 1px solid rgba(33,33,33,.15);
     }
@@ -111,7 +111,7 @@
           padding: 0;
           cursor: pointer;
           background: transparent;
-          
+
          // float: right;
           width: 50%;
           -webkit-appearance: none;
@@ -239,11 +239,11 @@
     background-color: #ffffff;
     border: 1px solid rgba(0,0,0,.15);
     .border-radius(4px);
-    
+
 }
 
-.login-buttons { width: 60%; margin: 0 auto;
-  p {text-align: center;margin: 10px 5px; font-weight: bold;}
+.login-buttons { width: 70%; margin: 0 auto;
+  p {text-align: center;margin: 10px 5px;}
   }
 
 /* SETUP page */
@@ -317,33 +317,87 @@
 
 #improved .heading {
   background-color: @successBackground;
-  border-color: @successBorder;
   border-bottom: 0;
 }
+
 #improved .heading .accordion-toggle {
   display: block;
   padding: 8px 15px;
   color: @successText;
+  border-left:5px solid @successText;
 }
 
 #improved h4 {
   color: @successText;
 }
 
+#improved .accordion-group {
+  margin-bottom: 10px;
+  border: 1px solid @successBorder;
+  .border-radius(0);
+}
+
+
+
 #worsened .heading {
   background-color: @errorBackground;
-  border-color: @errorBorder;
   border-bottom: 0;
 }
+
 #worsened .heading .accordion-toggle {
   display: block;
   padding: 8px 15px;
   color: @errorText;
+  border-left:5px solid @errorText;
+}
+
+#worsened .accordion-group {
+  margin-bottom: 10px;
+  border: 1px solid @errorBorder;
+  .border-radius(0);
 }
 
 #worsened h4 {
   color: @errorText;
 }
+
+
+
+
+#uncategorized .heading {
+  background-color: #f8f8f8;
+  border-color: #fbeed5;
+  border-bottom: 0;
+}
+
+#uncategorized .accordion-group {
+  margin-bottom: 10px;
+  .border-radius(0);
+}
+
+#uncategorized .heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px;
+  color: #777;
+  border-left:5px solid #f1ca79;
+}
+
+#uncategorized .heading a:hover{
+  color: #777;}
+
+#uncategorized h4{
+  color: #c09853;}
+
+
+
+.bad_highlight {
+  color:red;
+}
+
+.good_highlight {
+  color:green;
+}
+
 
 .box
 {
@@ -360,9 +414,3 @@
     font-size: 12px;
 }
 
-
-#alert_settings
-{
-  padding-left: 30px;
-  border-left: 1px solid #999;
-}

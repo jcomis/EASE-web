@@ -64,15 +64,10 @@
               <li class="active"><a href="improve.html">Improve</a></li>
             </ul>
             <ul class="nav pull-right">
-              <li><a href="setup.html">Account</a></li>
-              <li><a href="login">Sign Out</a></li>
+              <li><a href="account.html">Account</a></li>
+              <li><a href="login.html">Sign Out</a></li>
             </ul>
-            <!--<form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form>-->
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
@@ -84,31 +79,16 @@
         <div class="span2">
             <h2>Improve</h2>
         </div>
-        <div class="span10">
-
-            <div class="row box">
-                <div class="span2"><b>Room:</b> Bedroom</div>
-                <div class="span2"><b>Pets:</b> None</div>
-                <div class="span2"><b>Air Purifier:</b> Yes</div>
-                <div class="span2"><b>Floor: </b>Carpet</div>
-                <div class="span1"><b>HVAC: </b>Cool</div>
-                <div class="span1"><a href="" style="float:right;padding-right:30px;">Edit</a></div>
-            </div>
-
-            <br>
-
-        </div>
 
       </div>
 
       <div class="row">
 
-
             <div class="span6">
 
                 <div id="improved">
 
-                    <h4>Actions that have improved air quality</h4>
+                    <h4><i class="icon-heart pull-left"></i>Actions that have improved air quality</h4>
 
                     <div class="accordion" id="actions_improved">
 
@@ -121,7 +101,7 @@
                             <div id="collapseOne" class="accordion-body collapse">
                               <div class="accordion-inner">
                                   <table class="table">
-                                    <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                    <thead><th>Date</th><th>Time</th><th>Particles</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
                                     <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
                                     <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
                                     <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
@@ -139,7 +119,7 @@
                             <div id="collapseTwo" class="accordion-body collapse">
                               <div class="accordion-inner">
                                   <table class="table">
-                                    <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                    <thead><th>Date</th><th>Time</th><th>Particles</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
                                     <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
                                     <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
                                   </table>
@@ -156,7 +136,7 @@
                             <div id="collapseThree" class="accordion-body collapse">
                               <div class="accordion-inner">
                                   <table class="table">
-                                    <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                    <thead><th>Date</th><th>Time</th><th>Particles</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
                                     <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
                                     <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td>95</td><td>50%</td><td>24</td></tr>
                                   </table>
@@ -167,9 +147,9 @@
                     </div>
 
                 </div>
-
+                <br>
                 <div id="worsened">
-                  <h4>Actions that have worsened air quality</h4>
+                  <h4><i class="icon-warning-sign pull-left"></i>Actions that have worsened air quality</h4>
 
                     <div class="accordion" id="actions_worsened">
 
@@ -231,72 +211,152 @@
 
             </div>
 
-        <div class="span6">
-          <div id="alert_settings">
-            <h4>Alert Settings</h4>
+            <div class="span6">
 
-            I want to receive an alert when:
-            <select class="span3" id="notify_when">
-                <option>Never</option>
-                <option selected="selected">When the device detects a spike</option>
-                <option>When the device detects a spike or drop</option>
-            </select>
+                <div id="uncategorized">
 
-              <script>
-                $('#notify_when').change(function(){
-                  if($('#notify_when').val() == 'Never'){
-                      $('#data_types').fadeOut();
-                      $('#follow-up').fadeOut();
-                  }
-                  else {
-                      $('#data_types').fadeIn();
-                      $('#follow-up').fadeIn();
-                  };
-                });
-              </script>
+                    <h4><i class="icon-info-sign pull-left"></i>Uncategorized events</h4>
 
-            <div class="btn-group" data-toggle="buttons-checkbox" id="data_types">
-              <button type="button" class="btn">Particles</button>
-              <button type="button" class="btn">Temperature </button>
-              <button type="button" class="btn">Humidity</button>
-              <button type="button" class="btn">Co2</button>
+                    <div class="accordion" id="uncategorized">
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#uncategorized" href="#u-collapseOne">
+                                6/04/2013 - Spike in Particle Count
+                              </a>
+                            </div>
+                            <div id="u-collapseOne" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                  <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                  <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td class="bad_highlight">500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                                  <center>
+                                  <select class="span3" id="action">
+                                      <option selected="selected" disabled="disabled">Select a possible cause</option>
+                                      <option>Cooking</option>
+                                      <option>Opened a window</option>
+                                      <option>Dusted</option>
+                                      <option>Vacuumed</option>
+                                      <option>Turned on Fan</option>
+                                      <option>Other</option>
+                                  </select></center>
+
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#uncategorized" href="#u-collapseTwo">
+                                  6/03/2013 - Spike in Humidity and Temperature
+                              </a>
+                            </div>
+                            <div id="u-collapseTwo" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                  <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                  <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td class="bad_highlight">95</td><td class="bad_highlight">50%</td><td>24</td></tr>
+                                  </table>
+                                  <center>
+                                  <select class="span3" id="action">
+                                      <option selected="selected" disabled="disabled">Select a possible cause</option>
+                                      <option>Cooking</option>
+                                      <option>Opened a window</option>
+                                      <option>Dusted</option>
+                                      <option>Vacuumed</option>
+                                      <option>Turned on Fan</option>
+                                      <option>Other</option>
+                                  </select></center>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#uncategorized" href="#u-collapseThree">
+                                  6/01/2013 - Drop in Particle Count
+                              </a>
+                            </div>
+                            <div id="u-collapseThree" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                  <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                  <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td class="good_highlight">500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                                  <center>
+                                  <select class="span3" id="action">
+                                      <option selected="selected" disabled="disabled">Select a possible cause</option>
+                                      <option>Cooking</option>
+                                      <option>Opened a window</option>
+                                      <option>Dusted</option>
+                                      <option>Vacuumed</option>
+                                      <option>Turned on Fan</option>
+                                      <option>Other</option>
+                                  </select></center>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#uncategorized" href="#u-collapseFour">
+                                  5/28/2013 - Spike in Particle Count
+                              </a>
+                            </div>
+                            <div id="u-collapseFour" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                  <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                  <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td class="bad_highlight">500</td><td>95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                                  <center>
+                                  <select class="span3" id="action">
+                                      <option selected="selected" disabled="disabled">Select a possible cause</option>
+                                      <option>Cooking</option>
+                                      <option>Opened a window</option>
+                                      <option>Dusted</option>
+                                      <option>Vacuumed</option>
+                                      <option>Turned on Fan</option>
+                                      <option>Other</option>
+                                  </select></center>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="heading">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#uncategorized" href="#u-collapseFive">
+                                  5/27/2013 - Drop in Temperature
+                              </a>
+                            </div>
+                            <div id="u-collapseFive" class="accordion-body collapse">
+                              <div class="accordion-inner">
+                                  <table class="table">
+                                  <thead><th>Date</th><th>Time</th><th>Particle count</th><th>Temperature</th><th>Humidity</th><th>Co2</th></thead>
+                                  <tr><td><a href="explore.html">Mon, May 5, 2013</a></td><td>11:00am</td><td>500</td><td class="good_highlight">95</td><td>50%</td><td>24</td></tr>
+                                  </table>
+                                  <center>
+                                  <select class="span3" id="action">
+                                      <option selected="selected" disabled="disabled">Select a possible cause</option>
+                                      <option>Cooking</option>
+                                      <option>Opened a window</option>
+                                      <option>Dusted</option>
+                                      <option>Vacuumed</option>
+                                      <option>Turned on Fan</option>
+                                      <option>Other</option>
+                                  </select></center>
+                              </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <br>   <br><br>
-
-            <div id="follow-up">
-                After receiving an alert, I want to get a follow-up alert:
-                <select class="span2">
-                    <option>Never</option>
-                    <option>Only for spikes</option>
-                    <option selected="selected">Always</option>
-                </select>
-             </div>
-
-            <br>
-
-            I want to receive personalized suggestions:
-            <select class="span2" id="suggestions">
-                <option>Never</option>
-                <option>Regularly</option>
-                <option>Only on weekends</option>
-            </select>
-            <br><br>
-
-              My preferred method of notifications is:
-              <select class="span2" id="alerts" name="alerts">
-                <option disabled="disabled">Select Method</option>
-                  <option selected="selected">SMS</option>
-                  <option>Email</option>
-                  <option>Dashboard</option>
-              </select>
-
-              <br><br>
-              <a href="#" class="btn btn-info" id="cause-save">Save</a>
-              <a href="index.html" class="btn">Reset</a>
-          </div>
-
-        </div>
 
       </div>
 

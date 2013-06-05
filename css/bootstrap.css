@@ -6460,11 +6460,11 @@ a.badge:focus {
 #uncategorized .heading .accordion-toggle {
   display: block;
   padding: 8px 15px;
-  color: #888;
+  color: #777;
   border-left: 5px solid #f1ca79;
 }
 #uncategorized .heading a:hover {
-  color: #888;
+  color: #777;
 }
 #uncategorized h4 {
   color: #c09853;

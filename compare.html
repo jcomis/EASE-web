@@ -64,7 +64,7 @@
           <div class="explore-header">
             <h2>Compare</h2>
 
-            <div class="graph-controls span5 pull-right">
+            <div class="graph-controls pull-right">
               <span class="filter-label">Filter by
                 <div class="btn-group">
                   <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -89,6 +89,19 @@
                   <li><a href="#">This Week</a></li>
                   <li><a href="#">Last Week</a></li>
                   <li><a href="#">Other</a></li>
+                </ul>
+              </div>
+            </span>
+            <span class="filter-label">Compared to
+              <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                 A year ago
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">A year ago</a></li>
+                  <li><a href="#">A month ago</a></li>
+                  <li><a href="#">A week ago</a></li>
                 </ul>
               </div>
             </span>
@@ -541,10 +554,10 @@ document.body.appendChild(tt1);
             </div>
             <h5>Events</h5>
             <div class="accordion" id="accordion2">
-                <div class="accordion-group">
+                <div class="accordion-group accordion-alert">
                   <div class="accordion-heading">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                      Event 1 - This happened
+                      Dangerous CO<sub>2</sub> Levels
                     </a>
                   </div>
                   <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
@@ -553,10 +566,10 @@ document.body.appendChild(tt1);
                     </div>
                   </div>
                 </div>
-                <div class="accordion-group">
+                <div class="accordion-group accordion-warning">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                      Event 2 - That other thing happened
+                      Air Filter Change Reminder
                     </a>
                   </div>
                   <div id="collapseTwo" class="accordion-body collapse">
@@ -565,10 +578,52 @@ document.body.appendChild(tt1);
                     </div>
                   </div>
                 </div>
-                <div class="accordion-group">
+
+              </div>
+
+
+
+
+          </div>
+                    <div class="graph-selected">
+            <h4>May 20, 2012</h4>
+            <h5>Averages</h5>
+            <div class="well current-data">
+              <div class="now-data air-quality">Air Qual<span class="average"><strong>123</strong></span></div>
+              <div class="now-data temp">Temp<span class="average"><strong>62°F</strong></span></div>
+              <div class="now-data humidity">Humidity<span class="average"><strong>25%</strong></span></div>
+              <div class="now-data co2">CO<sup>2</sup><span class="average"><strong>345</strong></span></div>
+            </div>
+            <h5>Events</h5>
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group accordion-alert">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      Air Quality Spike
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-warning">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      Feedback Required
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-alert">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                      Event 3 - More things happened
+                      Air Quality Spike
                     </a>
                   </div>
                   <div id="collapseThree" class="accordion-body collapse">
@@ -582,60 +637,6 @@ document.body.appendChild(tt1);
 
 
 
-          </div>
-          <div class="graph-details">
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
-          <div class="summary-data">
-            <span class="summary-data-date">May 20, 2013</span><span class="label label-success">Good</span>
-            <p class="pull-right">Events <span class="badge">2</span></p>
-          </div>
           </div>
         </div>
 

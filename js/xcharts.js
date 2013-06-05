@@ -519,7 +519,7 @@ var emptyData = [[]],
     // Padding around the edge of the chart (space for axis labels, etc)
     paddingTop: 0,
     paddingRight: 0,
-    paddingBottom: 20,
+    paddingBottom: 15,
     paddingLeft: 60,
 
     // Axis tick formatting

@@ -150,6 +150,7 @@
     margin-top: 10px;
    // height: 800px;
     clear:both;
+    position: relative;
 }
 .ex-tooltip {
   display: none;
@@ -160,11 +161,21 @@
   padding: 3px;
   color: rgba(255,255,255,.9);
 }
-.chart-container h4 {
+.chart-container figure { margin:0;margin-left:-25px;}
+.chart-container h4 { position:relative;left:40px; top:15px;}
+//.explore-graph figure {position: relative; left:-60px; margin:0; margin-left: 20px;}
+
+.chart-container:nth-child(2) {position: relative; top: -25px;}
+.chart-container:nth-child(3) {position: relative; top: -50px;}
+.chart-container:nth-child(4) {position: relative; top: -75px;}
+
+
+.explore-graph h4 {
   //margin-left: 20px;
-  padding-top: -5px;
-  margin-left: 20px;
-  margin-bottom: -10px;
+
+ // width: 100px;
+ // background-color: rgba(255,255,255,.8);
+
 
   //line-height: 12px;
 }

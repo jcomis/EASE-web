@@ -34,7 +34,8 @@
 // Set width to auto for default container
 // We then reset it for fixed navbars in the #gridSystem mixin
 .navbar .container {
-  width: auto;
+//  width: auto;
+// #grid > .core > .span(@gridColumns);
 }
 
 // Override the default collapsed state
@@ -51,7 +52,7 @@
   display: block;
   // Vertically center the text given @navbarHeight
   padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
-  margin-left: 20px; // negative indent to left-align the text down the page
+  margin-left: -20px; // negative indent to left-align the text down the page
   font-size: 20px;
   font-weight: 200;
   color: @navbarBrandColor;

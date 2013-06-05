@@ -853,10 +853,10 @@
   .graph-controls .filter-label {
     display: block;
   }
-  .graph-controls .filter-label:last-child {
+  .graph-controls .filter-label {
     padding-top: 10px;
   }
-  .graph-controls .filter-label:last-child .btn-group {
+  .graph-controls .filter-label .btn-group {
     margin-left: 16px;
   }
   .row-fluid {

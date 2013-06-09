@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>EASE Air quality sensor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/xcharts.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/xcharts.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/justgage.js"></script>
+
+	<script>
+		function getUrlVars()
+		{
+		    var vars = [], hash;
+		    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+		    for(var i = 0; i < hashes.length; i++)
+		    {
+		        hash = hashes[i].split('=');
+		        vars.push(hash[0]);
+		        vars[hash[0]] = hash[1];
+		    }
+		    return vars;
+		}
+	</script>
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="dashboard.html">EASE</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="compare.html">Compare</a></li>
+              <li><a href="improve.html">Improve</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="settings.html">Settings</a></li>
+              <li><a href="login.html">Sign Out</a></li>
+            </ul>
+            <!--<form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- END OF NAV -->
+
+    <div class="container content main-dashboard">
+      <!-- Alert Center-->
+      <div class="row">
+        <div class="span12">
+			<div class="alert alert-success hide" id="first_time">
+			  <h4>Device Activated!</h4>
+			  Thank you for setting up your account. EASE will begin sensing and helping you improve your air quality
+			</div>
+
+			<div class="alert alert-success hide" id="follow-up">
+			  <h4>Saved</h4>
+			  We'll contact you in an hour to see if the suggestion helped
+			</div>
+
+            <div class="alert alert-success hide" id="helped">
+              <h4>Suggestion Saved</h4>
+              Glad to hear that helped, we'll remember it for next time
+            </div>
+
+            <div class="alert alert-warning hide" id="unhelped">
+              <h4>Sorry to hear that</h4>
+              We'll provide a different suggestion for you next time
+            </div>
+		</div>
+	  </div>
+	<script>
+		$(function(){
+			var status = getUrlVars()["status"];
+			if (status == "first") { $("#first_time").show().delay(5000).slideUp(500);}
+			else if (status == "follow-up") { $("#follow-up").show().delay(5000).slideUp(500);}
+            else if (status == "helped") { $("#helped").show().delay(5000).slideUp(500);}
+            else if (status == "unhelped") {$("#unhelped").show().delay(5000).slideUp(500);};
+		});
+
+	</script>
+
+
+      <!-- Dashboard-->
+      <div class="row">
+        <div class="span8">
+          <div class="row">
+            <div class="span6">
+                <h2>Current Readings</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span3">
+              <h4 class="heading-center">Air Quality</h4>
+              <div id="gauge" style="position: relative; height:190px; top:-40px;"></div>
+              <script>
+                var g = new JustGage({
+                id: "gauge",
+                value: getRandomInt(54, 249),
+                min: 0,
+                max: 1000,
+                customSectors: [{
+                color : "#72ba64",
+                lo : 0,
+                hi : 250
+              }],
+                shadowOpacity:.4,
+                shadowSize:3,
+                shadowVerticalOffset:5,
+                label: "",
+                labelMinFontSize: 18,
+                labelFontColor: "#5a5a5a",
+                counter: true,
+
+              });
+            </script>
+            <div class="dial-label"><span class="label label-success">Good</span></div>
+          </div>
+          <div class="span3">
+            <table class="table trend-table">
+              <tbody>
+                <tr>
+                  <td>CO<sub>2</sub></td>
+                  <td><div class="sensor-value">222ppm</div></td>
+                </tr>
+                <tr>
+                  <td>Temperature</td>
+                  <td><div class="sensor-value">65°F</div></td>
+                </tr>
+                <tr>
+                  <td>Humidity</td>
+                  <td><div class="sensor-value">55%</div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="move-up">
+        <hr>
+        <h5>Todays Averages</h5>
+          <div class="well current-averages">
+            <div class="now-data air-quality">Air Qual<span class="average"><strong>345</strong></span></div>
+              <div class="now-data temp">Temp<span class="average"><strong>45°F</strong></span></div>
+              <div class="now-data humidity">Humidity<span class="average"><strong>45%</strong></span></div>
+              <div class="now-data co2">CO<sub>2</sub><span class="average"><strong>145</strong></span></div>
+          </div>
+          <div class="today-graph">
+            <h3>24H Air Quality <small><em>as of 10:32pm 5/20/2013</em></small></h3>
+            <div class="graph">
+              <figure style="margin-left:-20px;width: 100%; height: 300px;" id="dash-chart"></figure>
+<script>
+    (function () {
+      var tt = document.createElement('div'),
+  leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+tt.className = 'ex-tooltip';
+document.body.appendChild(tt);
+
+      var data = {
+  "xScale": "time",
+  "yScale": "linear",
+  "main": [
+    {
+      "className": ".today-qual",
+      "data": [
+      {
+          "x": "2012-11-04T16:47",
+          "y": 147
+        },
+        {
+          "x": "2012-11-04T18:47",
+          "y": 107
+        },
+        {
+          "x": "2012-11-04T22:01",
+          "y": 89
+        },
+        {
+          "x": "2012-11-05T00:31",
+          "y": 83
+        },
+        {
+          "x": "2012-11-05T03:42",
+          "y": 72
+        },
+        {
+          "x": "2012-11-05T05:01",
+          "y": 55
+        },
+        {
+          "x": "2012-11-05T10:55",
+          "y": 192
+        },
+        {
+          "x": "2012-11-05T13:12",
+          "y": 110
+        },
+        {
+          "x": "2012-11-05T15:40",
+          "y": 230
+        },
+        {
+          "x": "2012-11-05T19:00",
+          "y": 240
+        }
+      ]
+    }
+  ]
+};
+      var opts = {
+  "dataFormatX": function (x) { return d3.time.format('%Y-%m-%dT%H:%M').parse(x); },
+  "tickFormatX": function (x) { return d3.time.format('%I%p')(x); },
+  "mouseover": function (d, i) {
+    var pos = $(this).offset();
+    $(tt).text(d3.time.format('%a %I:%M%p')(d.x) + ': ' + d.y)
+      .css({top: 10 + pos.top, left: 20 + pos.left, position: 'absolute'})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt).hide();
+  }
+};
+
+      var myChart = new xChart('line-dotted', data, '#dash-chart', opts);
+
+    }());
+    </script>
+
+            </div>
+          </div>
+        </div>
+</div>
+        <div class="span4">
+          <h2>Recent Events</h2>
+          <div class="alert recent-event">
+
+            <h4><i class="icon-info-sign icon-2x pull-left"></i>Warning: High Humiditiy Levels</h4>
+            <p>EASE has detected average humidity levels of above 65% for more than 3 days. Humidity levels above 60% put your environment at a high risk for mold growth.</p>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="submit" class="improve" onclick="window.location='improve.html';">Take Action</button>
+          </div>
+          <div class="alert alert-error recent-event">
+            <h4><i class="icon-warning-sign icon-2x pull-left"></i>Air Quality Spike</h4>
+            <p>Your air quality has deteriorated rapidly in the past hour. Do you know what could have caused it?</p>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" onclick="window.location='improve.html';">Take Action</button>
+          </div>
+          <div class="alert alert-success recent-event">
+            <h4><i class="icon-heart icon-2x pull-left"></i>Goal Reached!</h4>
+            <p>Congratulations! You reached your goal of maintaining CO<sub>2</sub> levels below 100ppm for one week!</p>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" onclick="window.location='improve.html';">View Goals</button>
+          </div>
+          <div class="alert recent-event">
+            <h4><i class="icon-pencil icon-2x pull-left"></i>Input Required</h4>
+            <p>EASE needs feedback in order to make the best recommendations to improve your airquality. Please complete your air quality task on the improve page.</p>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" onclick="window.location='improve.html';">Take Action</button>
+          </div>
+          <div class="alert alert-info recent-event" id="tip1">
+            <h4><i class="icon-calendar icon-2x pull-left"></i>Reminder: Change Air Filter</h4>
+            <p>It's been two months since you last changed your air filter. It is recommended you change it soon.</p>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" onclick="window.location='improve.html';">OK</button>
+          </div>
+          <div class="alert alert-info recent-event" id="tip2">
+            <h4><i class="icon-leaf icon-2x pull-left"></i>Energy Saving Tip</h4>
+            <p>Turn off your air filter when you are not at home or during time periods when air quality is already good. Explore your data to find out if you can save energy and go green by only using your filter when needed</p>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" onclick="window.location='explore.html';">Explore</button>
+          </div>
+          <div class="alert alert-info recent-event" id="tip3">
+            <h4><i class="icon-eye-open icon-2x pull-left"></i>EASE Tip of the week</h4>
+            <p>Air ducts can accumulate dust, pollen, and other particles which can cause allergy and asthma symtoms. Have you checked if your ducts need cleaning?</p>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" onclick="window.location='improve.html';">Take Action</button>
+          </div>
+          <div class="alert alert-info recent-event" id="tip4">
+            <h4><i class="icon-pencil icon-2x pull-left"></i>Input Required</h4>
+            <p>EASE needs feedback in order to make the best recommendations to improve your airquality. Please complete your air quality task on the improve page.</p>
+            <button type="button" class="dismiss" data-dismiss="alert">Dismiss</button>
+            <button type="button" class="improve" onclick="window.location='improve.html';">Take Action</button>
+          </div>
+       </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

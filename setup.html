@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>EASE Air quality sensor</title>
+    <title>EASE Setup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -68,7 +68,7 @@
 
   <body>
 
-  <br><br><br>
+  <br>
     <div class="container">
     <form class="form-horizontal">
 
@@ -80,8 +80,75 @@
 
     <!-- Step 1 ------------------------------------------------------------------------------->
 
-                    <div id="step1" class="slider_item">
-                        <a name="step1"></a>
+                        <div id="step1" class="slider_item">
+                            <a name="step1"></a>
+                            <div class="span8 offset2">
+                                <div class="setup_step">
+
+                                    <div class="modal-header">
+                                        <div class="row">
+                                            <div class="span4">
+                                                <h3>Login Info</h3>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="progress progress-success progress-striped">
+                                                    <div class="bar" style="width: 20%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Enter the login info that you'd like to use to access your account</p>
+                                        <hr>
+
+                                        <div class="row">
+                                            <div class="span4 offset1">
+                                                <div class="control-group">
+                                                    <label class="control-label" for="device">Email Address</label>
+                                                    <div class="controls">
+                                                        <input id="email" type="text" placeholder="name@domain.com"AUTOCOMPLETE=OFF />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="span4 offset1">
+                                                <div class="control-group">
+                                                    <label class="control-label" for="inputDeviceID">Password</label>
+                                                    <div class="controls">
+                                                        <input type="text" id="pass" placeholder="*********">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="span4 offset1">
+                                                <div class="control-group">
+                                                    <label class="control-label" for="inputDeviceID">Retype Password</label>
+                                                    <div class="controls">
+                                                        <input type="text" id="pass_retype" placeholder="*********">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                  <div class="modal-footer">
+                                    <a href="#step2" class="btn btn-large btn-info panel">Continue</a>
+                                  </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+    <!-- Step 2 ------------------------------------------------------------------------------->
+
+                    <div id="step2" class="slider_item">
+                        <a name="step2"></a>
                         <div class="span8 offset2">
                             <div class="setup_step">
 
@@ -92,7 +159,7 @@
                                         </div>
                                         <div class="span3">
                                             <div class="progress progress-success progress-striped">
-                                                <div class="bar" style="width: 25%"></div>
+                                                <div class="bar" style="width: 40%"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -128,18 +195,18 @@
                                 </div>
 
                               <div class="modal-footer">
-                                <a href="#step2" class="btn btn-large btn-info panel">Continue</a>
+                                <a href="#step1" class="btn btn-large panel">Back</a>
+                                <a href="#step3" class="btn btn-large btn-info panel">Continue</a>
                               </div>
 
                             </div>
                         </div>
                     </div>
 
-                    <br>
     <!-- Step 2 ------------------------------------------------------------------------------->
 
-                    <div id="step2" class="slider_item">
-                        <a name="step2"></a>
+                    <div id="step3" class="slider_item">
+                        <a name="step3"></a>
                         <div class="span8 offset2">
                             <div class="setup_step">
 
@@ -150,7 +217,7 @@
                                         </div>
                                         <div class="span3">
                                             <div class="progress progress-success progress-striped">
-                                                <div class="bar" style="width: 50%"></div>
+                                                <div class="bar" style="width: 60%"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -219,8 +286,8 @@
                                 <br>
 
                                 <div class="modal-footer">
-                                    <a href="#step1" class="btn btn-large panel">Back</a>
-                                    <a href="#step3" class="btn btn-large btn-info panel">Continue</a>
+                                    <a href="#step2" class="btn btn-large panel">Back</a>
+                                    <a href="#step4" class="btn btn-large btn-info panel">Continue</a>
                                 </div>
 
                             </div>
@@ -229,8 +296,8 @@
 
     <!-- Step 3 ------------------------------------------------------------------------------->
 
-                    <div id="step3" class="slider_item">
-                        <a name="step3"></a>
+                    <div id="step4" class="slider_item">
+                        <a name="step4"></a>
                         <div class="span8 offset2">
                             <div class="setup_step">
 
@@ -242,7 +309,7 @@
                                         </div>
                                         <div class="span3">
                                             <div class="progress progress-success progress-striped">
-                                                <div class="bar" style="width: 75%"></div>
+                                                <div class="bar" style="width: 80%"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -258,12 +325,6 @@
                                             <label class="control-label" for="name">Name</label>
                                             <div class="controls">
                                                 <input id="name" placeholder="for personalized greetings" type="text" AUTOCOMPLETE=OFF />
-                                            </div>
-                                        </div>
-                                        <div class="control-group">
-                                            <label class="control-label" for="email">Email</label>
-                                            <div class="controls">
-                                                <input id="email" name="email" placeholder="for email alerts" type="text" AUTOCOMPLETE=OFF />
                                             </div>
                                         </div>
                                         <div class="control-group">
@@ -288,8 +349,8 @@
                                 </div>
 
                                 <div class="modal-footer">
-                                    <a href="#step2" class="btn btn-large panel">Back</a>
-                                    <a href="#step4" class="btn btn-large btn-info panel">Continue</a>
+                                    <a href="#step3" class="btn btn-large panel">Back</a>
+                                    <a href="#step5" class="btn btn-large btn-info panel">Continue</a>
                                 </div>
 
                             </div>
@@ -298,8 +359,8 @@
 
     <!-- Step 4 ------------------------------------------------------------------------------->
 
-                    <div id="step4" class="slider_item">
-                        <a name="step4"></a>
+                    <div id="step5" class="slider_item">
+                        <a name="step5"></a>
                         <div class="span8 offset2">
                             <div class="setup_step">
 
@@ -409,7 +470,7 @@
                                 <br>
 
                                 <div class="modal-footer">
-                                    <a href="#step3" class="btn btn-large panel">Back</a>
+                                    <a href="#step4" class="btn btn-large panel">Back</a>
                                     <a href="dashboard.html?status=first" class="btn btn-large btn-info">Submit</a>
                                 </div>
 

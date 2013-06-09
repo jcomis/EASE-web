@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>EASE Air quality sensor</title>
+    <title>EASE Settings</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -62,13 +62,14 @@
             <br>
             <div class="tabbable">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab1" data-toggle="tab">Alert Settings</a></li>
-                <li><a href="#tab2" data-toggle="tab">Contact Settings</a></li>
-                <li><a href="#tab3" data-toggle="tab">Environment Settings</a></li>
+                <li class="active"><a href="#tab5" data-toggle="tab">Login Settings</a></li>
                 <li><a href="#tab4" data-toggle="tab">Device Settings</a></li>
+                <li><a href="#tab3" data-toggle="tab">Environment Settings</a></li>
+                <li><a href="#tab2" data-toggle="tab">Contact Settings</a></li>
+                <li><a href="#tab1" data-toggle="tab">Alert Settings</a></li>
               </ul>
               <div class="tab-content">
-                <div class="tab-pane active" id="tab1">
+                <div class="tab-pane" id="tab1">
                     <div class="row">
                       <div class="span7">
                           <div class="row">
@@ -157,49 +158,50 @@
                     </div>
 
                     <br>
-                    <a href="#" class="btn btn-info" id="cause-save">Save</a>
-                    <a href="index.html" class="btn">Reset</a>
+                    <button type="button" class="btn">Reset</button>
+                    <button type="button" class="btn btn-info">Save</button>
 
                 </div>
 
                 <div class="tab-pane" id="tab2">
                     <form class="form-horizontal">
 
-                        <div class="control-group">
-                            <label class="control-label" for="name">Name</label>
-                            <div class="controls">
-                                <input id="name" placeholder="for personalized greetings" type="text" AUTOCOMPLETE=OFF />
+                        <div class="row">
+                            <div class="span4 offset1">
+
+                                <div class="control-group">
+                                    <label class="control-label" for="name">Name</label>
+                                    <div class="controls">
+                                        <input id="name" placeholder="for personalized greetings" type="text" AUTOCOMPLETE=OFF />
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label" for="phone">Phone</label>
+                                    <div class="controls">
+                                        <input id="phone" name="phone" placeholder="for text alerts" type="tel" AUTOCOMPLETE=OFF />
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="twitter">Twitter</label>
+                                    <div class="controls">
+                                        <input id="twitter" name="twitter" placeholder="for twitter alerts" type="text" AUTOCOMPLETE=OFF />
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="zip">Zip</label>
+                                    <div class="controls">
+                                        <input id="zip" name="zip" type="tel" placeholder="for regional air quality data" AUTOCOMPLETE="OFF" />
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="control-group">
-                            <label class="control-label" for="email">Email</label>
-                            <div class="controls">
-                                <input id="email" name="email" placeholder="for email alerts" type="text" AUTOCOMPLETE=OFF />
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="phone">Phone</label>
-                            <div class="controls">
-                                <input id="phone" name="phone" placeholder="for text alerts" type="tel" AUTOCOMPLETE=OFF />
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="twitter">Twitter</label>
-                            <div class="controls">
-                                <input id="twitter" name="twitter" placeholder="for twitter alerts" type="text" AUTOCOMPLETE=OFF />
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="zip">Zip</label>
-                            <div class="controls">
-                                <input id="zip" name="zip" type="tel" placeholder="for regional air quality data" AUTOCOMPLETE="OFF" />
-                            </div>
-                        </div>
+
                     </form>
 
-                    <br>
-                    <a href="#" class="btn btn-info" id="cause-save">Save</a>
-                    <a href="index.html" class="btn">Reset</a>
+                    <button type="button" class="btn">Reset</button>
+                    <button type="button" class="btn btn-info">Save</button>
 
                 </div>
 
@@ -257,8 +259,8 @@
                     </div>
 
                     <br>
-                    <a href="#" class="btn btn-info" id="cause-save">Save</a>
-                    <a href="index.html" class="btn">Reset</a>
+                    <button type="button" class="btn">Reset</button>
+                    <button type="button" class="btn btn-info">Save</button>
 
                 </div>
 
@@ -266,11 +268,8 @@
                 <div class="tab-pane" id="tab4">
 
                     <div class="row">
-                        <div class="span2">
-                            <img src="img/device_id.png" width=200>
-                        </div>
 
-                        <div class="span4">
+                        <div class="span5">
                             <form class="form-horizontal">
                                 <br><br>
                                 <div class="control-group">
@@ -284,19 +283,62 @@
                                     <label class="control-label" for="inputDeviceID">Device ID</label>
                                     <div class="controls">
                                         <input type="text" id="inputDeviceID" placeholder="XXXX-XX-XXXX">
-                                        <br><br>
-                                        <a href="#" class="btn btn-info" id="cause-save">Save</a>
-                                        <a href="index.html" class="btn">Reset</a>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <div class="span2">
+                            <img src="img/device_id.png" width=200>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="btn">Reset</button>
+                    <button type="button" class="btn btn-info">Save</button>
+
+                </div>
+
+
+                <div class="tab-pane active" id="tab5">
+                    <form class="form-horizontal">
+
+                        <div class="row">
+                            <div class="span4 offset1">
+
+                                <div class="control-group">
+                                    <label class="control-label" for="email">Email</label>
+                                    <div class="controls">
+                                        <input id="email" name="email" placeholder="name@domain.com" type="text" AUTOCOMPLETE=OFF />
                                     </div>
                                 </div>
 
+                                <div class="control-group">
+                                    <label class="control-label" for="inputDeviceID">Password</label>
+                                    <div class="controls">
+                                        <input type="text" id="pass" placeholder="*********">
+                                    </div>
+                                </div>
 
+                                <div class="control-group">
+                                    <label class="control-label" for="inputDeviceID">Retype Password</label>
+                                    <div class="controls">
+                                        <input type="text" id="pass_retype" placeholder="*********">
+                                    </div>
+                                </div>
 
-                            </form>
+                            </div>
                         </div>
-                    </div>
+
+                    </form>
+
+                    <button type="button" class="btn">Reset</button>
+                    <button type="button" class="btn btn-info">Save</button>
+
 
                 </div>
+
               </div>
             </div>
           </div>

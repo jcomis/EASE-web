@@ -16,6 +16,8 @@ body{
     .border-radius(20px);
 }
 
+
+
 /* DASH page */
 .dash {
     .box-shadow(1px 1px rgba(0,0,0,.2));
@@ -98,6 +100,7 @@ body{
 #tip1,#tip2, #tip3, #tip4 { display: none;}
 .recent-event {
     padding: 6px 0px 0px 0px;
+    margin-bottom:20px;
   //  border: 1px solid rgba(0,0,0,.2);
     //.border-radius(3px);
    // .box-shadow(inset 1px 1px 1px rgba(0,0,0,.15));
@@ -333,80 +336,14 @@ body{
 
 /* improve page */
 
-#improved .heading {
-  background-color: @successBackground;
-  border-bottom: 0;
+#uncategorized i, #improved i, #worsened i, #tips h3 i{
+margin-top:8px;
 }
 
-#improved .heading .accordion-toggle {
-  display: block;
-  padding: 8px 15px;
-  color: @successText;
-  border-left:5px solid @successText;
+.heading .average{
+display:inline;
+float:right;
 }
-
-#improved h4 {
-  color: @successText;
-}
-
-#improved .accordion-group {
-  margin-bottom: 10px;
-  border: 1px solid @successBorder;
-  .border-radius(0);
-}
-
-
-
-#worsened .heading {
-  background-color: @errorBackground;
-  border-bottom: 0;
-}
-
-#worsened .heading .accordion-toggle {
-  display: block;
-  padding: 8px 15px;
-  color: @errorText;
-  border-left:5px solid @errorText;
-}
-
-#worsened .accordion-group {
-  margin-bottom: 10px;
-  border: 1px solid @errorBorder;
-  .border-radius(0);
-}
-
-#worsened h4 {
-  color: @errorText;
-}
-
-
-
-
-#uncategorized .heading {
-  background-color: #f8f8f8;
-  border-color: #fbeed5;
-  border-bottom: 0;
-}
-
-#uncategorized .accordion-group {
-  margin-bottom: 10px;
-  .border-radius(0);
-}
-
-#uncategorized .heading .accordion-toggle {
-  display: block;
-  padding: 8px 15px;
-  color: #777;
-  border-left:5px solid #f1ca79;
-}
-
-#uncategorized .heading a:hover{
-  color: #777;}
-
-#uncategorized h4{
-  color: #c09853;}
-
-
 
 .bad_highlight {
   color:red;
@@ -416,19 +353,110 @@ body{
   color:green;
 }
 
+#improved {
 
-.box
-{
-  margin-top: 10px;
-  padding: 10px 0px;
-  background-color:#E0E0E0;
-  text-shadow: 0 1px 0 rgba(255,255,255,.5);
-  /*border: 1px solid #999;*/
-  .border-radius(@baseBorderRadius);
+    .heading {
+        background-color: @successBackground;
+        border-bottom: 0;
+    }
+
+    .heading .accordion-toggle {
+      display: block;
+      padding: 11px 15px;
+      color: #333;
+      border-left:5px solid @successText;
+    }
+
+    .accordion-group {
+      margin-bottom: 10px;
+      border: 1px solid @successBorder;
+      .border-radius(0);
+    }
+
+     h3 {color: @successText;}
+
 }
 
-.box div
-{
-    font-size: 12px;
+
+
+#worsened {
+
+    .heading {
+      background-color: @errorBackground;
+      border-bottom: 0;
+    }
+
+     .heading .accordion-toggle {
+      display: block;
+      padding: 11px 15px;
+      color: #333;
+      border-left:5px solid @errorText;
+    }
+
+     .accordion-group {
+      margin-bottom: 10px;
+      border: 1px solid @errorBorder;
+      .border-radius(0);
+    }
+
+     h3 {color: @errorText;}
+
 }
 
+
+#uncategorized{
+
+    .heading {
+      background-color: #f8f8f8;
+      border-color: #fbeed5;
+      border-bottom: 0;
+    }
+
+    .accordion-group {
+      margin-bottom: 10px;
+      .border-radius(0);
+      border:  1px solid rgb(250, 230, 191)}
+
+    .heading .accordion-toggle {
+      display: block;
+      padding: 11px 15px;
+      color: #333;
+      border-left:5px solid #f1ca79;
+    }
+
+     h3{color: #c09853;}
+
+    .accordion-inner button{
+    margin-bottom: 10px;
+    }
+}
+
+.tip_header{
+  color: @infoText;
+}
+
+.improve-tip {
+    padding: 0px;
+    margin-bottom:20px;
+    border: 1px solid rgb(176, 207, 223);
+    .border-radius(3px);
+    .text {padding: 20px 20px 0px 20px;}
+    i {margin-top:2px;}
+    p {padding-bottom: 10px;}
+
+
+    .heading{
+        background-color: #e6f6fa;
+        padding:10px;
+        border-bottom:1px solid #e5e5e5;
+     }
+
+    button{
+        background-color: #e6f6fa;
+        color: @infoText;
+        border: 1px solid rgb(176, 207, 223);
+        padding:7px 10px;
+        margin: 0px 0px 10px 10px;
+    }
+
+}

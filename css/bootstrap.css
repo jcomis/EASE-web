@@ -5804,6 +5804,7 @@ body {
 }
 .recent-event {
   padding: 6px 0px 0px 0px;
+  margin-bottom: 20px;
 }
 .recent-event i {
   margin-left: 10px;
@@ -6094,18 +6095,31 @@ body {
   display: none;
 }
 /* improve page */
+#uncategorized i,
+#improved i,
+#worsened i,
+#tips h3 i {
+  margin-top: 8px;
+}
+.heading .average {
+  display: inline;
+  float: right;
+}
+.bad_highlight {
+  color: red;
+}
+.good_highlight {
+  color: green;
+}
 #improved .heading {
   background-color: #dff0d8;
   border-bottom: 0;
 }
 #improved .heading .accordion-toggle {
   display: block;
-  padding: 8px 15px;
-  color: #468847;
+  padding: 11px 15px;
+  color: #333;
   border-left: 5px solid #468847;
-}
-#improved h4 {
-  color: #468847;
 }
 #improved .accordion-group {
   margin-bottom: 10px;
@@ -6114,14 +6128,17 @@ body {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+#improved h3 {
+  color: #468847;
+}
 #worsened .heading {
   background-color: #f2dede;
   border-bottom: 0;
 }
 #worsened .heading .accordion-toggle {
   display: block;
-  padding: 8px 15px;
-  color: #b94a48;
+  padding: 11px 15px;
+  color: #333;
   border-left: 5px solid #b94a48;
 }
 #worsened .accordion-group {
@@ -6131,7 +6148,7 @@ body {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-#worsened h4 {
+#worsened h3 {
   color: #b94a48;
 }
 #uncategorized .heading {
@@ -6144,38 +6161,51 @@ body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  border: 1px solid #fae6bf;
 }
 #uncategorized .heading .accordion-toggle {
   display: block;
-  padding: 8px 15px;
-  color: #777;
+  padding: 11px 15px;
+  color: #333;
   border-left: 5px solid #f1ca79;
 }
-#uncategorized .heading a:hover {
-  color: #777;
-}
-#uncategorized h4 {
+#uncategorized h3 {
   color: #c09853;
 }
-.bad_highlight {
-  color: red;
+#uncategorized .accordion-inner button {
+  margin-bottom: 10px;
 }
-.good_highlight {
-  color: green;
+.tip_header {
+  color: #3a87ad;
 }
-.box {
-  margin-top: 10px;
-  padding: 10px 0px;
-  background-color: #E0E0E0;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  /*border: 1px solid #999;*/
-
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+.improve-tip {
+  padding: 0px;
+  margin-bottom: 20px;
+  border: 1px solid #b0cfdf;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
-.box div {
-  font-size: 12px;
+.improve-tip .text {
+  padding: 20px 20px 0px 20px;
+}
+.improve-tip i {
+  margin-top: 2px;
+}
+.improve-tip p {
+  padding-bottom: 10px;
+}
+.improve-tip .heading {
+  background-color: #e6f6fa;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.improve-tip button {
+  background-color: #e6f6fa;
+  color: #3a87ad;
+  border: 1px solid #b0cfdf;
+  padding: 7px 10px;
+  margin: 0px 0px 10px 10px;
 }
 .pull-right {
   float: right;

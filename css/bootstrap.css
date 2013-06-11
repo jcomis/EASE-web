@@ -6014,6 +6014,22 @@ body {
   -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
 }
+.accordion-alert .accordion-heading:hover {
+  background-color: #eed3d7;
+}
+.accordion-warning .accordion-heading:hover {
+  background-color: #fbeed5;
+}
+.accordion-alert .accordion-heading a:hover,
+.accordion-warning .accordion-heading a:hover {
+  text-decoration: none;
+  color: #333;
+}
+.accordion-warning .accordion-inner h5,
+.accordion-alert .accordion-inner h5 {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
 /* LOGIN page */
 .login-header {
   margin-top: 10%;

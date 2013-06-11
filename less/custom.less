@@ -250,7 +250,10 @@ body{
 }
 .accordion-warning .accordion-inner {border: 1px solid darken(@warningBorder,40%);border-top: none; .box-shadow(inset 0px 1px 3px rgba(0,0,0,.25));}
 
-
+.accordion-alert .accordion-heading:hover { background-color: @errorBorder;}
+.accordion-warning .accordion-heading:hover { background-color: @warningBorder;}
+.accordion-alert .accordion-heading a:hover, .accordion-warning .accordion-heading a:hover { text-decoration: none; color: #333;}
+.accordion-warning .accordion-inner h5, .accordion-alert .accordion-inner h5 { margin-bottom: 3px; margin-top: 3px;}
 /* LOGIN page */
 .login-header { margin-top:10%;}
 #login {

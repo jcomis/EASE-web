@@ -238,22 +238,25 @@ body{
 }
 .accordion-toggle { color: #666;}
 .accordion-alert .accordion-heading {
-  border: 1px solid darken(@errorBorder,40%);
+  border: 1px solid darken(@errorBorder,20%);
   border-left: 5px solid darken(@errorBorder,40%);
    .border-radius(0);
 }
-.accordion-alert .accordion-inner {border: 1px solid darken(@errorBorder,40%);border-top: none; .box-shadow(inset 0px 1px 3px rgba(0,0,0,.25));}
+.accordion-alert .accordion-inner {border: 1px solid darken(@errorBorder,20%);border-top: none;}
 
 .accordion-warning .accordion-heading {
-  border: 1px solid darken(@warningBorder,40%);
+  border: 1px solid darken(@warningBorder,20%);
   border-left: 5px solid darken(@warningBorder,40%);
 }
-.accordion-warning .accordion-inner {border: 1px solid darken(@warningBorder,40%);border-top: none; .box-shadow(inset 0px 1px 3px rgba(0,0,0,.25));}
+.accordion-warning .accordion-inner {border: 1px solid darken(@warningBorder,20%);border-top: none;}
 
 .accordion-alert .accordion-heading:hover { background-color: @errorBorder;}
 .accordion-warning .accordion-heading:hover { background-color: @warningBorder;}
 .accordion-alert .accordion-heading a:hover, .accordion-warning .accordion-heading a:hover { text-decoration: none; color: #333;}
 .accordion-warning .accordion-inner h5, .accordion-alert .accordion-inner h5 { margin-bottom: 3px; margin-top: 3px;}
+
+
+
 /* LOGIN page */
 .login-header { margin-top:10%;}
 #login {
@@ -334,7 +337,8 @@ body{
 	display: none;
 }
 
-
+.heading a { color: #666;}
+.heading a:hover { text-decoration: none; color: #333;}
 
 
 /* improve page */
@@ -358,21 +362,27 @@ float:right;
 
 #improved {
 
-    .heading {
-        background-color: @successBackground;
-        border-bottom: 0;
+//    .heading {
+//        background-color: @successBackground;
+//    }
+
+    .heading:hover {
+        background-color:@successBackground;
+    }
+
+    .accordion-inner {
+        border-top: 1px solid darken(@successBackground,20%);
     }
 
     .heading .accordion-toggle {
       display: block;
       padding: 11px 15px;
-      color: #333;
       border-left:5px solid @successText;
     }
 
     .accordion-group {
       margin-bottom: 10px;
-      border: 1px solid @successBorder;
+      border: 1px solid darken(@successBackground,20%);
       .border-radius(0);
     }
 
@@ -384,21 +394,27 @@ float:right;
 
 #worsened {
 
-    .heading {
-      background-color: @errorBackground;
-      border-bottom: 0;
+//    .heading {
+//      background-color: @errorBackground;
+//    }
+
+    .heading:hover {
+        background-color:@errorBackground;
     }
 
      .heading .accordion-toggle {
       display: block;
       padding: 11px 15px;
-      color: #333;
       border-left:5px solid @errorText;
+    }
+
+    .accordion-inner {
+        border-top: 1px solid darken(@errorBackground,20%);
     }
 
      .accordion-group {
       margin-bottom: 10px;
-      border: 1px solid @errorBorder;
+      border: 1px solid darken(@errorBackground,20%);
       .border-radius(0);
     }
 
@@ -409,25 +425,31 @@ float:right;
 
 #uncategorized{
 
-    .heading {
-      background-color: #f8f8f8;
-      border-color: #fbeed5;
-      border-bottom: 0;
+//    .heading {
+//      background-color: @warningBorder;
+//    }
+
+    .heading:hover {
+        background-color:@warningBorder;
+    }
+
+    .accordion-inner {
+        border-top: 1px solid darken(@warningBorder,20%);
     }
 
     .accordion-group {
       margin-bottom: 10px;
       .border-radius(0);
-      border:  1px solid rgb(250, 230, 191)}
+      border:  1px solid darken(@warningBorder,20%) ;;
+    }
 
     .heading .accordion-toggle {
       display: block;
       padding: 11px 15px;
-      color: #333;
-      border-left:5px solid #f1ca79;
+      border-left:5px solid darken(@warningBorder,20%);
     }
 
-     h3{color: #c09853;}
+     h3{color: darken(@warningBorder,40%);}
 
     .accordion-inner button{
     margin-bottom: 10px;

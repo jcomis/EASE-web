@@ -6226,6 +6226,9 @@ body {
   padding: 7px 10px;
   margin: 0px 0px 10px 10px;
 }
+.improve-tip button:hover {
+  background-color: #bce7f2;
+}
 .pull-right {
   float: right;
 }
